@@ -5,31 +5,26 @@
     <title>Soukaina Hammadi | Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<!-- HEADER -->
 <header class="hero">
     <div class="hero-content">
         <img src="images/test.jpeg" class="profile" alt="Soukaina">
         <h1>Soukaina Hammadi</h1>
-        <p class="subtitle">
-            Étudiante Ingénieure en Génie des Systèmes Industriels
-        </p>
+        <p class="subtitle">Ingénieure en Génie des Systèmes Industriels</p>
         <a href="#contact" class="btn">Me contacter</a>
     </div>
 </header>
 
-<!-- NAVBAR -->
 <nav>
     <a href="#about">À propos</a>
     <a href="#skills">Compétences</a>
@@ -38,127 +33,77 @@
     <a href="#contact">Contact</a>
 </nav>
 
-<!-- ABOUT -->
 <section id="about">
-    <h2>À propos de moi</h2>
+    <h2>À propos</h2>
     <p>
-        Étudiante en Génie des Systèmes Industriels passionnée par l’optimisation des performances industrielles,
-        l’amélioration continue, la qualité et la gestion des systèmes de production.
-        J’ai acquis une expérience pratique à travers plusieurs stages industriels.
+        Passionnée par l’optimisation industrielle, l’amélioration continue,
+        la performance énergétique et la qualité.
     </p>
 </section>
 
-<!-- SKILLS -->
 <section id="skills">
     <h2>Compétences</h2>
 
-    <div class="skill">
-        <p>Lean & Amélioration Continue</p>
-        <div class="bar"><span style="width:90%"></span></div>
+    <div class="card skill-card">
+        <p>Lean Manufacturing</p>
     </div>
 
-    <div class="skill">
+    <div class="card skill-card">
         <p>Qualité Industrielle</p>
-        <div class="bar"><span style="width:85%"></span></div>
     </div>
 
-    <div class="skill">
+    <div class="card skill-card">
         <p>Logistique & Production</p>
-        <div class="bar"><span style="width:80%"></span></div>
     </div>
 
-    <div class="skill">
-        <p>Logiciels (MATLAB, CATIA, AutoCAD)</p>
-        <div class="bar"><span style="width:85%"></span></div>
+    <div class="card skill-card">
+        <p>MATLAB • CATIA • AutoCAD</p>
     </div>
 </section>
 
-<!-- PROJECTS -->
 <section id="projects">
-    <h2>Projets académiques</h2>
+    <h2>Projets</h2>
 
     <div class="card">
         <h3>Gestion des employés</h3>
-        <p>Système de gestion du personnel et optimisation des processus.</p>
+        <p>Système de gestion et optimisation des processus internes.</p>
     </div>
 
     <div class="card">
-        <h3>Dimensionnement électrique – 2,7 MW</h3>
-        <p>Calcul et dimensionnement des câbles selon normes industrielles.</p>
-    </div>
-
-    <div class="card">
-        <h3>Conceptions CATIA</h3>
-        <p>Réalisation de conceptions mécaniques 3D sous CATIA V5.</p>
-
-        <div class="gallery">
-            <img src="images/testt.png" alt="CATIA 1">
-            <img src="images/teest.png" alt="CATIA 2">
-            <img src="images/catia.png" alt="CATIA 3">
-        </div>
+        <h3>Dimensionnement Centrale 2,7 MW</h3>
+        <p>Calcul électrique selon normes industrielles.</p>
     </div>
 </section>
 
-<!-- STAGES -->
 <section id="stages">
-    <h2>Stages professionnels</h2>
+    <h2>Stages</h2>
 
     <div class="card">
-        <h3>LafargeHolcim – Audit énergétique</h3>
-        <p>Analyse de la consommation énergétique et amélioration efficacité.</p>
+        <h3>LafargeHolcim</h3>
+        <p>Audit énergétique et optimisation.</p>
     </div>
 
     <div class="card">
-        <h3>ABCO Coca-Cola – Qualité & Sécurité</h3>
-        <p>Contrôle qualité et suivi CO₂.</p>
-    </div>
-
-    <div class="card">
-        <h3>Marmalec – Éclairage public</h3>
-        <p>Installation et maintenance systèmes d’éclairage public.</p>
+        <h3>ABCO Coca-Cola</h3>
+        <p>Qualité & Sécurité industrielle.</p>
     </div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact-section">
+<section id="contact">
     <h2>Contact</h2>
-
-    <div class="contact-container">
-
-        <div class="contact-info">
-            <div class="info-box">
-                <i class="fa-solid fa-envelope"></i>
-                <span>Email: soukainahammadi09@gmail.com</span>
-            </div>
-
-            <div class="info-box">
-                <i class="fa-brands fa-linkedin"></i>
-                <span>LinkedIn: Soukaina Hammadi</span>
-            </div>
-
-            <div class="info-box">
-                <i class="fa-solid fa-phone"></i>
-                <span>Phone: +212 7 07 73 45 87</span>
-            </div>
-        </div>
-
-        <div class="contact-form">
-            <form>
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5"></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </div>
-
+    <div class="card">
+        <p><i class="fa-solid fa-envelope"></i> soukainahammadi09@gmail.com</p>
+        <p><i class="fa-brands fa-linkedin"></i> Soukaina Hammadi</p>
+        <p><i class="fa-solid fa-phone"></i> +212 7 07 73 45 87</p>
     </div>
 </section>
 
 <footer>
-    <p>© 2026 — Soukaina Hammadi</p>
+    <p>© 2026 Soukaina Hammadi</p>
 </footer>
 
 </body>
 </html>
+
 
 
