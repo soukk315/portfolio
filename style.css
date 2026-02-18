@@ -21,8 +21,6 @@ body{
     align-items:center;
     text-align:center;
     color:white;
-    position:relative;
-    overflow:hidden;
 }
 
 .profile{
@@ -40,12 +38,10 @@ body{
 .hero h1{
     font-size:3rem;
     font-weight:800;
-    letter-spacing:1px;
 }
 
 .subtitle{
     margin:15px 0;
-    opacity:0.95;
     font-weight:300;
 }
 
@@ -99,7 +95,7 @@ nav a::after{
 }
 
 nav a:hover::after{
-    width:50%;
+    width:60%;
 }
 
 /* SECTIONS */
@@ -108,7 +104,7 @@ section{
     padding:100px 10%;
 }
 
-/* TITRES AVEC DEMI LIGNE */
+/* TITRES */
 
 h2{
     font-size:2rem;
@@ -129,30 +125,10 @@ h2::after{
     border-radius:5px;
 }
 
-/* SKILLS BAR */
+/* CARDS GENERAL */
 
-.skill{
-    margin-bottom:25px;
-}
-
-.bar{
-    background:#e5e7eb;
-    height:10px;
-    border-radius:20px;
-    overflow:hidden;
-}
-
-.bar span{
-    display:block;
-    height:10px;
-    background:linear-gradient(90deg,#6366f1,#ec4899);
-    border-radius:20px;
-    transition:width 1s ease-in-out;
-}
-
-/* CARDS */
-
-.card{
+.card,
+.project{
     background:white;
     padding:30px;
     margin-bottom:30px;
@@ -162,66 +138,32 @@ h2::after{
     border:1px solid transparent;
 }
 
-.card:hover{
+.card:hover,
+.project:hover{
     transform:translateY(-12px) scale(1.02);
     box-shadow:0 15px 40px rgba(236,72,153,0.2);
     border:1px solid #6366f1;
 }
 
-/* GALLERY */
+/* SKILLS CARDS */
 
-.gallery img{
-    width:110px;
+.skill-card{
+    display:inline-block;
     margin:10px;
-    border-radius:15px;
-    transition:0.4s;
-}
-
-.gallery img:hover{
-    transform:scale(1.1);
+    min-width:220px;
+    text-align:center;
+    font-weight:600;
 }
 
 /* CONTACT */
 
-.contact-container{
-    display:flex;
-    gap:40px;
-    flex-wrap:wrap;
+#contact .card{
+    text-align:center;
 }
 
-.contact-info, .contact-form{
-    flex:1;
-}
-
-input, textarea{
-    width:100%;
-    padding:12px;
-    margin-bottom:15px;
-    border-radius:10px;
-    border:1px solid #ddd;
-    transition:0.3s;
-}
-
-input:focus, textarea:focus{
-    border-color:#6366f1;
-    outline:none;
-    box-shadow:0 0 10px rgba(99,102,241,0.2);
-}
-
-button{
-    padding:12px;
-    border:none;
-    border-radius:10px;
-    background:linear-gradient(90deg,#6366f1,#ec4899);
-    color:white;
-    font-weight:600;
-    cursor:pointer;
-    transition:0.4s;
-}
-
-button:hover{
-    transform:translateY(-3px);
-    box-shadow:0 10px 20px rgba(0,0,0,0.15);
+#contact i{
+    margin-right:10px;
+    color:#6366f1;
 }
 
 /* FOOTER */
