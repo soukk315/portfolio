@@ -18,15 +18,20 @@
 
 <header class="hero">
     <div class="hero-content">
-        <img src="image/test.jpeg" class="profile" alt="Soukaina">
+    
         <h1>Soukaina Hammadi</h1>
         <p class="subtitle">Ingénieure en Génie des Systèmes Industriels</p>
-        <a href="#contact" class="btn">Me contacter</a>
+        <p class="hero-description">
+Bienvenue dans mon espace professionnel.<br>
+À travers ce portfolio, je partage mes projets, mes compétences et ma passion pour l’ingénierie industrielle.
+</p>
+<p>
+        <a href="#contact" class="btn">Me contacter</a> </p>
     </div>
 </header>
 
 <nav>
-    <a href="#about">À propos</a>
+    <a href="#about">À propos de moi</a>
     <a href="#skills">Compétences</a>
     <a href="#projects">Projets</a>
     <a href="#stages">Stages</a>
@@ -45,33 +50,82 @@
 <section id="skills">
     <h2>Compétences</h2>
 
-    <div class="card skill-card">
-        <p>Lean Manufacturing</p>
-    </div>
+    <div class="skills-list">
+        <div class="skill-item">
+            <i class="fa-solid fa-check"></i>
+            Amélioration continue (Lean, Six Sigma)
+        </div>
 
-    <div class="card skill-card">
-        <p>Qualité Industrielle</p>
-    </div>
+        <div class="skill-item">
+            <i class="fa-solid fa-check"></i>
+            Qualité (AMDEC, Ishikawa, Pareto, ISO 9001)
+        </div>
 
-    <div class="card skill-card">
-        <p>Logistique & Production</p>
-    </div>
+        <div class="skill-item">
+            <i class="fa-solid fa-check"></i>
+            Logistique & Gestion de production
+        </div>
 
-    <div class="card skill-card">
-        <p>MATLAB </p>
-         <p>CATIA</p>  
-         <p>AutoCAD</p>
+        <div class="skill-item">
+            <i class="fa-solid fa-check"></i>
+            Audit énergétique industriel
+        </div>
+<div class="software-section">
+    <h3>Logiciels maîtrisés</h3>
+
+    <div class="software-grid">
+
+        <div class="software-item">
+            <img src="image/matlab.png" alt="MATLAB">
+            <p>MATLAB</p>
+        </div>
+
+        <div class="software-item">
+            <img src="image/catia.png" alt="CATIA">
+            <p>CATIA V5</p>
+        </div>
+
+        <div class="software-item">
+            <img src="image/autocad.png" alt="AutoCAD">
+            <p>AutoCAD</p>
+        </div>
+
+        <div class="software-item">
+            <img src="image/caneco.png" alt="Caneco">
+            <p>Caneco BT</p>
+        </div>
+
+        <div class="software-item">
+            <img src="image/qelectrotech.png" alt="QElectroTech">
+            <p>QElectroTech</p>
+        </div>
+ <div class="software-item">
+            <img src="image/Fusion360.png" alt="Fusion360">
+            <p>Fusion360</p>
+        </div>
+    
+ <div class="software-item">
+            <img src="image/MiniTab.png" alt="MiniTab">
+            <p>MiniTab</p>
+        </div>
+    </div>
+</div>
+
+        
     </div>
 </section>
+
 
 <section id="projects">
     <h2>Projets</h2>
 
     <div class="card">
         <h3>Gestion des employés</h3>
-        <p>Conception et implémentation d’un système de gestion des ressources humaines
-           Modélisation des données avec MCD et MLD
-           Implémentation de la base de données avec SQL</p>
+        <p>
+            Conception et implémentation d’un système de gestion des ressources humaines.
+            Modélisation des données avec MCD et MLD.
+            Implémentation de la base de données avec SQL.
+        </p>
     </div>
 
     <div class="card">
@@ -79,20 +133,59 @@
         <p>Calcul électrique selon normes industrielles.</p>
     </div>
     <div class="card">
-        <h3>Projet de Fin d’Année (PFA) </h3>
-        <p>Conception d’une station de pompage électrique conforme
-aux exigences du Cahier des Prescriptions Spéciales (CPS) :</p>
- <p>▪Réalisation du schéma électrique normalisé avec QElectroTech</p>
- <p>▪Dimensionnement des câbles et choix des protections électriques via Caneco BT </p>
- <p>▪Programmation API avec supervision</p>
-    </div>
-     <div class="project-video">
-    <video width="100%" controls>
-        <source src="videos/media2.mp4" type="video/mp4">
-        Votre navigateur ne supporte pas la vidéo.
-    </video>
+    <h3>Surveillance Intelligente des Conditions Environnementales</h3>
+
+    <p>
+        Conception d’un système IoT intelligent pour la surveillance
+        de la température et de l’humidité en temps réel.
+    </p>
+
+    <ul class="project-list">
+        <li>ESP8266 & Capteur DHT11</li>
+        <li>Application Web avec Django REST API</li>
+        <li>Base de données & affichage JSON / HTML</li>
+        <li>Notifications automatiques (Gmail, WhatsApp, Telegram)</li>
+        <li>Conception PCB avec EasyEDA & FlatCAM</li>
+        <li>Modélisation boîtier 3D (Fusion 360)</li>
+        <li>Impression 3D – Snapmaker 2.0 A350T</li>
+    </ul>
 </div>
+
+
+    <!-- PROJET PFA -->
+    <div class="card">
+        <h3>Projet de Fin d’Année (PFA)</h3>
+        <p>
+            Conception d’une station de pompage électrique conforme au CPS :
+        </p>
+        <p>▪ Schéma électrique avec QElectroTech</p>
+        <p>▪ Dimensionnement via Caneco BT</p>
+        <p>▪ Programmation API avec supervision</p>
+
+        <div class="project-video">
+            <video controls>
+                <source src="videos/media2.mp4" type="video/mp4">
+            </video>
+        </div>
+    </div>
+
+    <!-- PROJET CATIA -->
+    <div class="card">
+        <h3>Modélisation mécanique – CATIA</h3>
+        <p>
+            Réalisation de dessins techniques et modélisation 3D
+            (pièces mécaniques, assemblages, plans cotés).
+        </p>
+
+        <div class="catia-gallery">
+            <img src="image/catia1.png">
+            <img src="image/catia2.png">
+            <img src="image/catia3.png">
+        </div>
+    </div>
+
 </section>
+
 
 <section id="stages">
     <h2>Stages</h2>
@@ -115,16 +208,49 @@ aux exigences du Cahier des Prescriptions Spéciales (CPS) :</p>
            Initiation à la Gestion de la Maintenance des Ouvrages (GMO).
            Participation aux opérations de maintenance industrielle.</p>
     </div>
+<section id="contact" class="contact-section">
+
+    <h2 class="contact-title">Contact Me</h2>
+
+    <div class="contact-container">
+
+        <!-- LEFT SIDE -->
+        <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>Feel free to reach out to me through any of the following methods:</p>
+
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <span>Email: <a href="#">soukainahammadi09@gmail.com</a></span>
+            </div>
+
+            <div class="info-box">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn: @soukaina hammadi</span>
+            </div>
+
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <span>Phone: +212 7 07 73 45 87 </span>
+            </div>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="contact-form">
+            <h3>Send Me a Message</h3>
+
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="soukaina hammadi" required>
+                <textarea placeholder="Your Message" rows="6" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+
 </section>
 
-<section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p><i class="fa-solid fa-envelope"></i> soukainahammadi09@gmail.com</p>
-        <p><i class="fa-brands fa-linkedin"></i> Soukaina Hammadi</p>
-        <p><i class="fa-solid fa-phone"></i> +212 7 07 73 45 87</p>
-    </div>
-</section>
 
 <footer>
     <p>© 2026 Soukaina Hammadi</p>
