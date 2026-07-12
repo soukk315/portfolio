@@ -2,594 +2,1049 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Soukaina Hammadi | Ingénieure GSI</title>
+<title>Soukaina Hammadi | Ingénieure Génie des Systèmes Industriels</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Portfolio de Soukaina Hammadi, Ingénieure d'État en Génie des Systèmes Industriels — automatisme, qualité, amélioration continue.">
+<meta name="description" content="Portfolio de Soukaina Hammadi, Ingénieure d'État en Génie des Systèmes Industriels — automatisation, qualité, amélioration continue.">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- ═══════ NAV ═══════ -->
-<nav id="navbar">
-  <div class="nav-logo">SH.</div>
-  <ul class="nav-links">
-    <li><a href="#about">À propos</a></li>
-    <li><a href="#academics">Formation</a></li>
-    <li><a href="#skills">Compétences</a></li>
-    <li><a href="#projects">Projets</a></li>
-    <li><a href="#stages">Expériences</a></li>
-    <li><a href="#contact" class="nav-cta">Contact</a></li>
-  </ul>
+<!-- ═══════ NAVIGATION ═══════ -->
+<nav id="mainNav">
+    <a href="#top" class="nav-logo">S. Hammadi</a>
+    <ul class="nav-links" id="navLinks">
+        <li><a href="#about" data-i18n="nav.about">À propos</a></li>
+        <li><a href="#academics" data-i18n="nav.academics">Formation</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Compétences</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projets</a></li>
+        <li><a href="#stages" data-i18n="nav.stages">Expériences</a></li>
+        <li><a href="#certifications" data-i18n="nav.certifications">Certifications</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
+        <li><a href="assets/CV_Soukaina_Hammadi.pdf" class="nav-cta" download data-i18n="nav.cta">CV</a></li>
+        <li><button class="lang-switch" id="langSwitch" type="button" aria-label="Changer de langue">
+            <span class="lang-opt active" data-lang="fr">FR</span><span class="lang-sep">/</span><span class="lang-opt" data-lang="en">EN</span>
+        </button></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+    </button>
 </nav>
 
 <!-- ═══════ HERO ═══════ -->
-<header class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-orb o1"></div>
-  <div class="hero-orb o2"></div>
-  <div class="hero-content">
-    <div class="hero-badge">
-      <span class="dot"></span>
-      Disponible pour opportunités · Oujda, Maroc
+<header class="hero" id="top">
+    <div class="hero-grid"></div>
+    <div class="hero-orb o1"></div>
+    <div class="hero-orb o2"></div>
+
+    <div class="hero-content">
+        <span class="hero-badge"><span class="dot"></span> <span data-i18n="hero.badge">Disponible pour un poste d'Ingénieure Industrielle</span></span>
+
+        <h1>Soukaina <span class="grad">Hammadi</span></h1>
+        <p class="hero-role" data-i18n="hero.role">Ingénieure en Génie des Systèmes Industriels</p>
+        <p class="hero-tagline" data-i18n="hero.tagline">Automatisation industrielle, qualité, logistique et amélioration continue : je conçois des solutions industrielles fiables, j'optimise les procédés et je contribue à la performance des entreprises.</p>
+
+        <div class="hero-btns">
+            <a href="#projects" class="btn-hero-primary"><i class="fa-solid fa-diagram-project"></i> <span data-i18n="hero.btnProjects">Voir mes projets</span></a>
+            <a href="assets/CV_Soukaina_Hammadi.pdf" class="btn-hero-outline" download><i class="fa-solid fa-download"></i> <span data-i18n="hero.btnCV">Télécharger mon CV</span></a>
+            <a href="#contact" class="btn-hero-outline"><i class="fa-solid fa-paper-plane"></i> <span data-i18n="hero.btnContact">Me contacter</span></a>
+        </div>
+
+        <div class="hero-stats">
+            <div>
+                <div class="hstat-num" data-count="5">0</div>
+                <div class="hstat-label" data-i18n="hero.stat1">ANNÉES DE FORMATION</div>
+            </div>
+            <div>
+                <div class="hstat-num" data-count="7">0</div>
+                <div class="hstat-label" data-i18n="hero.stat2">PROJETS RÉALISÉS</div>
+            </div>
+            <div>
+                <div class="hstat-num" data-count="5">0</div>
+                <div class="hstat-label" data-i18n="hero.stat3">EXPÉRIENCES TERRAIN</div>
+            </div>
+            <div>
+                <div class="hstat-num" data-count="15">0</div>
+                <div class="hstat-label" data-i18n="hero.stat4">TECHNOLOGIES</div>
+            </div>
+        </div>
     </div>
-    <h1>
-      Soukaina<br>
-      <span class="grad">HAMMADI</span>
-    </h1>
-    <p class="hero-role">Ingénieure d'État · Génie des Systèmes Industriels · Option Productique</p>
-    <p class="hero-tagline">
-      Automatisation Industrielle · Qualité · Logistique & Gestion de Production · Amélioration Continue
-    </p>
-    <div class="hero-btns">
-      <a href="#projects" class="btn-hero-primary"><i class="fas fa-folder-open"></i> Voir mes projets</a>
-      <a href="cv.pdf" download class="btn-hero-outline"><i class="fas fa-download"></i> Télécharger mon CV</a>
-      <a href="#contact" class="btn-hero-outline"><i class="fas fa-envelope"></i> Me contacter</a>
-    </div>
-    <div class="hero-stats">
-      <div><div class="hstat-num" data-target="5">0+</div><div class="hstat-label">Années de formation</div></div>
-      <div><div class="hstat-num" data-target="10">0+</div><div class="hstat-label">Projets réalisés</div></div>
-      <div><div class="hstat-num" data-target="5">0+</div><div class="hstat-label">Expériences</div></div>
-      <div><div class="hstat-num" data-target="13">0+</div><div class="hstat-label">Technologies</div></div>
-    </div>
-  </div>
-  <div class="scroll-cue"></div>
+
+    <div class="scroll-cue"></div>
 </header>
 
-<!-- ═══════ ABOUT ═══════ -->
+<!-- ═══════ À PROPOS ═══════ -->
 <section id="about">
-  <div class="about-grid">
-    <div class="reveal-l">
-      <div class="section-label">À propos</div>
-      <h2 class="section-title">Ingénieure au service de la <span>performance</span></h2>
-      <p>Ingénieure d'État en Génie des Systèmes Industriels, je mets l'ingénierie au service de la performance industrielle en combinant analyse, optimisation et innovation.</p>
-      <p>Mon parcours académique et mes expériences en entreprise m'ont permis d'appréhender les systèmes de production dans leur globalité, depuis l'étude des procédés et l'analyse des performances jusqu'au développement de solutions techniques adaptées aux enjeux de l'industrie.</p>
-      <p>Animée par une volonté constante d'apprendre et de progresser, je souhaite intégrer un environnement industriel stimulant où je pourrai contribuer à l'amélioration des procédés, à l'excellence opérationnelle et à la création de valeur.</p>
-      <div class="about-highlight">
-        <i class="fas fa-map-marker-alt"></i>
-        <p>Oujda, Maroc · Ouverte à toute opportunité nationale et internationale</p>
-      </div>
-      <div class="about-highlight" style="margin-top:10px;">
-        <i class="fab fa-linkedin"></i>
-        <p><a href="https://www.linkedin.com/in/soukaina-hammadi-b36766291" target="_blank" style="color:var(--primary);text-decoration:none;">linkedin.com/in/soukaina-hammadi</a></p>
-      </div>
-    </div>
-    <div class="reveal-r">
-      <div class="section-label">Certification</div>
-      <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:20px;">Reconnaissance professionnelle</h3>
-      <div class="card" style="margin-bottom:0;padding:24px 26px;">
-        <div style="display:flex;gap:16px;align-items:flex-start;">
-          <div style="width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--primary),#6366f1);display:flex;align-items:center;justify-content:center;font-size:1.4rem;flex-shrink:0;">🏆</div>
-          <div>
-            <div style="font-size:.72rem;font-weight:800;color:var(--primary);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px;">Certification · Août 2024</div>
-            <h4 style="font-size:.97rem;font-weight:700;margin-bottom:4px;">ISO 9001:2015 – QMS Foundations</h4>
-            <p style="font-size:.82rem;color:var(--text-muted);margin-bottom:12px;">Knights of Safety Academy</p>
-            <div style="display:flex;flex-wrap:wrap;gap:6px;">
-              <span style="font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:20px;background:#ede9fe;color:var(--primary);border:1px solid #c4b5fd;">Exigences ISO 9001:2015</span>
-              <span style="font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:20px;background:#ede9fe;color:var(--primary);border:1px solid #c4b5fd;">Approche processus</span>
-              <span style="font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:20px;background:#ede9fe;color:var(--primary);border:1px solid #c4b5fd;">Gestion des risques</span>
-              <span style="font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:20px;background:#ede9fe;color:var(--primary);border:1px solid #c4b5fd;">CAPA</span>
-              <span style="font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:20px;background:#ede9fe;color:var(--primary);border:1px solid #c4b5fd;">KPI</span>
-              <span style="font-size:.68rem;font-weight:700;padding:3px 9px;border-radius:20px;background:#ede9fe;color:var(--primary);border:1px solid #c4b5fd;">Amélioration continue</span>
+    <div class="about-grid">
+        <div class="reveal-l">
+            <span class="section-label" data-i18n="about.label">Qui suis-je</span>
+            <h2 class="section-title" data-i18n-html="about.titleHtml">À propos <span>de moi</span></h2>
+        </div>
+        <div class="about-text reveal-r">
+            <p data-i18n="about.p1">Ingénieure d'État en Génie des Systèmes Industriels, je mets l'ingénierie au service de la performance industrielle en combinant analyse, optimisation et innovation. Mon parcours académique et mes expériences en entreprise m'ont permis d'appréhender les systèmes de production dans leur globalité, depuis l'étude des procédés et l'analyse des performances jusqu'au développement de solutions techniques adaptées aux enjeux de l'industrie.</p>
+            <p data-i18n="about.p2">Animée par une volonté constante d'apprendre et de progresser, je souhaite intégrer un environnement industriel stimulant où je pourrai contribuer à l'amélioration des procédés, à l'excellence opérationnelle et à la création de valeur.</p>
+            <div class="about-highlight">
+                <i class="fa-solid fa-industry"></i>
+                <p data-i18n="about.highlight">5 expériences terrain dans des secteurs exigeants : cimenterie, ferroviaire, agroalimentaire et énergie.</p>
             </div>
-          </div>
         </div>
-      </div>
     </div>
-  </div>
 </section>
 
-<!-- ═══════ ACADEMICS ═══════ -->
+<!-- ═══════ FORMATION ═══════ -->
 <section id="academics">
-  <div class="section-label reveal">Formation</div>
-  <h2 class="section-title reveal">Parcours <span>académique</span></h2>
-  <div class="academics-grid reveal-stagger">
-    <div class="academic-card">
-      <span class="academic-year">2023 — 2026</span>
-      <h3>Ingénieure d'État en Génie des Systèmes Industriels</h3>
-      <div class="academic-school"><i class="fa-solid fa-graduation-cap"></i> EHEI — École des Hautes Études d'Ingénierie, Oujda</div>
-      <p>Cycle ingénieur orienté automatisme industriel, contrôle avancé des procédés, qualité et amélioration continue. PFE réalisé chez Holcim Oujda sur le système Kiln Master.</p>
-    </div>
-    <div class="academic-card">
-      <span class="academic-year">2021 — 2023</span>
-      <h3>Technicienne Spécialisée en Efficacité Énergétique</h3>
-      <div class="academic-school"><i class="fa-solid fa-bolt"></i> IFMEREE — Institut de Formation aux Métiers des Énergies Renouvelables</div>
-      <p>Formation ciblée sur l'audit énergétique, l'efficacité énergétique des installations et les énergies renouvelables.</p>
-    </div>
-    <div class="academic-card">
-      <span class="academic-year">2020 — 2021</span>
-      <h3>Baccalauréat — Option Sciences Physiques</h3>
-      <div class="academic-school"><i class="fa-solid fa-school"></i> Qadi Ibn Al Arabi, Oujda</div>
-      <p>Formation scientifique générale ayant posé les bases d'analyse et de rigueur poursuivies dans le cursus technique.</p>
-    </div>
-  </div>
-</section>
+    <span class="section-label reveal" data-i18n="academics.label">Parcours académique</span>
+    <h2 class="section-title reveal" data-i18n="academics.title">Formation</h2>
+    <p class="section-sub reveal" data-i18n="academics.sub">Un parcours construit progressivement, de l'efficacité énergétique à l'ingénierie des systèmes industriels.</p>
 
-<!-- ═══════ SKILLS ═══════ -->
-<section id="skills">
-  <div class="section-label reveal">Compétences</div>
-  <h2 class="section-title reveal">Expertise <span>pluridisciplinaire</span></h2>
-
-  <div class="skills-list reveal">
-
-    <div class="skill-item" style="border-left:3px solid #f59e0b;background:linear-gradient(135deg,#fffbeb,#fff);">
-      <i class="fa-solid fa-magnifying-glass" style="color:#f59e0b;"></i>
-      <div>
-        <h3>Méthode 8D — Résolution de problèmes</h3>
-        <p>Maîtrise complète de la démarche 8D pour la résolution structurée de problèmes industriels : constitution d'équipe, description du problème, actions de confinement, analyse des causes racines (RCA), actions correctives, validation, prévention et clôture.</p>
-        <div class="skill-tags">
-          <span style="background:#fef3c7;color:#92400e;border-color:#fcd34d;">D1 · Équipe</span>
-          <span style="background:#fef3c7;color:#92400e;border-color:#fcd34d;">D2 · Description</span>
-          <span style="background:#fef3c7;color:#92400e;border-color:#fcd34d;">D3 · Confinement</span>
-          <span style="background:#fef3c7;color:#92400e;border-color:#fcd34d;">D4 · Causes racines</span>
-          <span style="background:#fef3c7;color:#92400e;border-color:#fcd34d;">D5 · Correctives</span>
-          <span style="background:#fef3c7;color:#92400e;border-color:#fcd34d;">D6 · Validation</span>
-          <span style="background:#fef3c7;color:#92400e;border-color:#fcd34d;">D7 · Prévention</span>
-          <span style="background:#fef3c7;color:#92400e;border-color:#fcd34d;">D8 · Clôture</span>
+    <div class="academics-grid">
+        <div class="academic-card reveal">
+            <span class="academic-year">2023 — 2026</span>
+            <h3 data-i18n="academics.c1.title">Ingénieure d'État en Génie des Systèmes Industriels</h3>
+            <div class="academic-school"><i class="fa-solid fa-school"></i> <span data-i18n="academics.c1.school">EHEI Oujda · Maroc — Option Productique</span></div>
+            <p data-i18n="academics.c1.desc">Formation d'ingénieur généraliste en systèmes industriels : automatisation, qualité, gestion de production et amélioration continue.</p>
         </div>
-      </div>
+        <div class="academic-card reveal">
+            <span class="academic-year">2021 — 2023</span>
+            <h3 data-i18n="academics.c2.title">Technicienne Spécialisée en Efficacité Énergétique</h3>
+            <div class="academic-school"><i class="fa-solid fa-school"></i> <span data-i18n="academics.c2.school">IFMEREE Oujda · Maroc</span></div>
+            <p data-i18n="academics.c2.desc">Spécialisation en audit énergétique et efficacité des installations industrielles.</p>
+        </div>
+        <div class="academic-card reveal">
+            <span class="academic-year">2020 — 2021</span>
+            <h3 data-i18n="academics.c3.title">Baccalauréat Sciences Physiques</h3>
+            <div class="academic-school"><i class="fa-solid fa-school"></i> <span data-i18n="academics.c3.school">Lycée Qadi Ibn Al Arabi · Oujda</span></div>
+            <p data-i18n="academics.c3.desc">Base scientifique en physique appliquée, fondement de mon parcours en ingénierie.</p>
+        </div>
     </div>
-
-    <div class="skill-item">
-      <i class="fa-solid fa-chart-line"></i>
-      <div>
-        <h3>Qualité Industrielle</h3>
-        <p>Maîtrise des outils de contrôle qualité, de l'analyse des non-conformités et de la mise en œuvre d'actions correctives. Utilisation des méthodes 8D, AMDEC, Ishikawa, Pareto et application des principes de la norme ISO 9001.</p>
-        <div class="skill-tags"><span>8D</span><span>AMDEC</span><span>Ishikawa</span><span>Pareto</span><span>ISO 9001</span><span>HSE</span><span>LOTO</span></div>
-      </div>
-    </div>
-
-    <div class="skill-item">
-      <i class="fa-solid fa-arrow-trend-up"></i>
-      <div>
-        <h3>Amélioration Continue</h3>
-        <p>Analyse des performances industrielles, identification des opportunités d'amélioration et application des méthodologies Lean Manufacturing, Six Sigma, DMAIC et PDCA afin d'optimiser les procédés.</p>
-        <div class="skill-tags"><span>Lean</span><span>Six Sigma</span><span>DMAIC</span><span>PDCA</span><span>Kaizen</span><span>5S</span><span>VSM</span></div>
-      </div>
-    </div>
-
-    <div class="skill-item">
-      <i class="fa-solid fa-gears"></i>
-      <div>
-        <h3>Automatisme & Contrôle-commande</h3>
-        <p>Développement de solutions d'automatisation sous Siemens TIA Portal et LabVIEW, programmation d'automates Siemens, conception d'interfaces HMI et supervision de procédés industriels.</p>
-        <div class="skill-tags"><span>TIA Portal</span><span>LabVIEW</span><span>HMI</span><span>SCADA</span><span>OPC</span><span>ABB AC800M</span><span>Régulation PID</span></div>
-      </div>
-    </div>
-
-    <div class="skill-item">
-      <i class="fa-solid fa-industry"></i>
-      <div>
-        <h3>Gestion Industrielle & Logistique</h3>
-        <p>Connaissances en gestion de production, gestion des stocks, planification industrielle et coordination de projets dans un environnement de production.</p>
-        <div class="skill-tags"><span>Gestion de production</span><span>Stocks</span><span>Planification</span><span>KPI</span><span>Supply Chain</span></div>
-      </div>
-    </div>
-
-    <div class="skill-item">
-      <i class="fa-solid fa-bolt"></i>
-      <div>
-        <h3>Efficacité Énergétique</h3>
-        <p>Réalisation d'audits énergétiques, analyse des consommations et proposition de solutions visant à améliorer l'efficacité énergétique des installations industrielles.</p>
-        <div class="skill-tags"><span>Audit énergétique</span><span>Optimisation</span><span>ISO 50001</span></div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- LOGICIELS -->
-  <div class="software-section reveal">
-    <h3>Logiciels maîtrisés</h3>
-    <div class="software-grid">
-      <div class="software-item"><img src="image/matlab.png" alt="MATLAB"><p>MATLAB</p></div>
-      <div class="software-item"><img src="image/catia.png" alt="CATIA"><p>CATIA V5</p></div>
-      <div class="software-item"><img src="image/autocad.png" alt="AutoCAD"><p>AutoCAD</p></div>
-      <div class="software-item"><img src="image/caneco.png" alt="Caneco"><p>Caneco BT</p></div>
-      <div class="software-item"><img src="image/TIA V16.png" alt="TIA V16"><p>TIA V16</p></div>
-      <div class="software-item"><img src="image/Fusion360.png" alt="Fusion360"><p>Fusion 360</p></div>
-      <div class="software-item"><img src="image/LabVIEW.png" alt="LabVIEW"><p>LabVIEW</p></div>
-      <div class="software-item"><img src="image/MiniTab.png" alt="MiniTab"><p>MiniTab</p></div>
-    </div>
-  </div>
 </section>
 
-<!-- ═══════ PROJECTS ═══════ -->
+<!-- ═══════ COMPÉTENCES ═══════ -->
+<section id="skills">
+    <span class="section-label reveal" data-i18n="skills.label">Expertise technique</span>
+    <h2 class="section-title reveal" data-i18n-html="skills.titleHtml">Compétences <span>clés</span></h2>
+    <p class="section-sub reveal" data-i18n="skills.sub">Une expertise transverse, du terrain à l'analyse, couvrant l'ensemble de la chaîne de performance industrielle.</p>
+
+    <div class="skills-list">
+        <div class="skill-item reveal">
+            <i class="fa-solid fa-magnifying-glass-chart"></i>
+            <div>
+                <h3 data-i18n="skills.s1.title">Qualité Industrielle</h3>
+                <p data-i18n="skills.s1.desc">Maîtrise des outils de contrôle qualité, de l'analyse des non-conformités et de la mise en œuvre d'actions correctives, avec application des principes de la norme ISO 9001.</p>
+                <div class="skill-tags"><span>8D</span><span>AMDEC</span><span>Ishikawa</span><span>Pareto</span><span>ISO 9001</span></div>
+            </div>
+        </div>
+
+        <div class="skill-item reveal">
+            <i class="fa-solid fa-arrow-trend-up"></i>
+            <div>
+                <h3 data-i18n="skills.s2.title">Amélioration Continue</h3>
+                <p data-i18n="skills.s2.desc">Analyse des performances industrielles, identification des opportunités d'amélioration et application des méthodologies Lean Manufacturing, Six Sigma, DMAIC et PDCA.</p>
+                <div class="skill-tags"><span>Lean</span><span>Six Sigma</span><span>DMAIC</span><span>PDCA</span></div>
+            </div>
+        </div>
+
+        <div class="skill-item reveal">
+            <i class="fa-solid fa-microchip"></i>
+            <div>
+                <h3 data-i18n="skills.s3.title">Automatisme & Informatique Industrielle</h3>
+                <p data-i18n="skills.s3.desc">Développement de solutions d'automatisation sous Siemens TIA Portal et LabVIEW, programmation d'automates, conception d'interfaces HMI et supervision de procédés.</p>
+                <div class="skill-tags"><span>TIA Portal</span><span>LabVIEW</span><span>S7-1500</span><span>HMI</span></div>
+            </div>
+        </div>
+
+        <div class="skill-item reveal">
+            <i class="fa-solid fa-sliders"></i>
+            <div>
+                <h3 data-i18n="skills.s4.title">Contrôle-Commande</h3>
+                <p data-i18n="skills.s4.desc">Configuration de communications industrielles (OPC) et développement de boucles de régulation pour la supervision de procédés en temps réel.</p>
+                <div class="skill-tags"><span>OPC</span><span>Régulation</span><span>Supervision temps réel</span></div>
+            </div>
+        </div>
+
+        <div class="skill-item reveal">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <div>
+                <h3 data-i18n="skills.s5.title">Gestion de Production & Logistique</h3>
+                <p data-i18n="skills.s5.desc">Connaissances en gestion de production, gestion des stocks, planification industrielle et coordination de projets en environnement de production.</p>
+                <div class="skill-tags"><span>Planification</span><span>Gestion des stocks</span><span>Coordination de projet</span></div>
+            </div>
+        </div>
+
+        <div class="skill-item reveal">
+            <i class="fa-solid fa-bolt"></i>
+            <div>
+                <h3 data-i18n="skills.s6.title">Efficacité Énergétique</h3>
+                <p data-i18n="skills.s6.desc">Réalisation d'audits énergétiques, analyse des consommations et proposition de solutions pour améliorer l'efficacité énergétique des installations industrielles.</p>
+                <div class="skill-tags"><span>Audit énergétique</span><span>Optimisation</span></div>
+            </div>
+        </div>
+
+        <div class="skill-item reveal">
+            <i class="fa-solid fa-diagram-project"></i>
+            <div>
+                <h3 data-i18n="skills.s7.title">Génie Industriel</h3>
+                <p data-i18n="skills.s7.desc">Analyse globale des systèmes de production, de l'étude des procédés au développement de solutions techniques adaptées aux enjeux de l'industrie.</p>
+                <div class="skill-tags"><span>Analyse de procédés</span><span>Solutions techniques</span></div>
+            </div>
+        </div>
+
+        <div class="skill-item reveal">
+            <i class="fa-solid fa-laptop-code"></i>
+            <div>
+                <h3 data-i18n="skills.s8.title">Digitalisation Industrielle</h3>
+                <p data-i18n="skills.s8.desc">Développement d'applications web de supervision, conception de bases de données et prototypes IoT pour la surveillance en temps réel des procédés.</p>
+                <div class="skill-tags"><span>Django REST API</span><span>SQL</span><span>IoT</span><span>ESP8266</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="software-section reveal">
+        <h3 data-i18n="skills.softwareTitle">Logiciels & outils maîtrisés</h3>
+        <div class="software-grid">
+            <div class="software-item"><i class="fa-solid fa-gears"></i><p>TIA Portal V16</p></div>
+            <div class="software-item"><i class="fa-solid fa-chart-line"></i><p>LabVIEW</p></div>
+            <div class="software-item"><i class="fa-solid fa-square-root-variable"></i><p>MATLAB</p></div>
+            <div class="software-item"><i class="fa-solid fa-cube"></i><p>CATIA V5</p></div>
+            <div class="software-item"><i class="fa-solid fa-cubes"></i><p>Fusion 360</p></div>
+            <div class="software-item"><i class="fa-solid fa-drafting-compass"></i><p>AutoCAD</p></div>
+            <div class="software-item"><i class="fa-solid fa-bolt"></i><p>Caneco BT</p></div>
+            <div class="software-item"><i class="fa-solid fa-plug"></i><p>QElectroTech</p></div>
+            <div class="software-item"><i class="fa-solid fa-microchip"></i><p>EasyEDA</p></div>
+            <div class="software-item"><i class="fa-solid fa-satellite-dish"></i><p>ISIS Proteus</p></div>
+            <div class="software-item"><i class="fa-solid fa-robot"></i><p>Arduino IDE</p></div>
+            <div class="software-item"><i class="fa-solid fa-code"></i><p>MikroC PRO</p></div>
+            <div class="software-item"><i class="fa-solid fa-chart-simple"></i><p>Minitab</p></div>
+            <div class="software-item"><i class="fa-solid fa-diagram-project"></i><p>Arena</p></div>
+            <div class="software-item"><i class="fa-solid fa-table"></i><p>Excel</p></div>
+            <div class="software-item"><i class="fa-solid fa-list-check"></i><p>GanttProject</p></div>
+            <div class="software-item"><i class="fa-brands fa-microsoft"></i><p>Visual Studio</p></div>
+            <div class="software-item"><i class="fa-brands fa-python"></i><p>PyCharm</p></div>
+        </div>
+    </div>
+</section>
+
+<!-- ═══════ PROJETS ═══════ -->
 <section id="projects">
-  <div class="section-label reveal">Projets</div>
-  <h2 class="section-title reveal">Réalisations <span>académiques</span></h2>
+    <span class="section-label reveal" data-i18n="projects.label">07 Réalisations</span>
+    <h2 class="section-title reveal" data-i18n-html="projects.titleHtml">Projets <span>techniques</span></h2>
+    <p class="section-sub reveal" data-i18n="projects.sub">Des projets académiques et personnels couvrant l'automatisation, la qualité, l'IoT industriel et la conception mécanique.</p>
 
-  <!-- PFE Kiln Master -->
-  <div class="card reveal">
-    <span class="pfe-badge-inline"><i class="fas fa-star"></i> Projet de Fin d'Études</span>
-    <h3>Implémentation du système Kiln Master — Holcim Oujda</h3>
-    <p>Dans le cadre de mon Projet de Fin d'Études chez Holcim Oujda, j'ai réalisé une étude de faisabilité pour l'implémentation du système de contrôle avancé Kiln Master sur la ligne de cuisson, avec pour objectifs d'améliorer la stabilité du procédé, d'optimiser les performances énergétiques et de préparer le déploiement d'une solution d'automatisation avancée.</p>
-    <ul class="project-list">
-      <li>Analyse de la fiabilité des instruments et qualification des signaux critiques</li>
-      <li>Création des tags OPC pour la communication ABB AC800M ↔ HLC Server</li>
-      <li>Développement d'un prototype fonctionnel sous LabVIEW intégrant 3 boucles de régulation (BZT · ID Fan · Alimentation farine)</li>
-      <li>Validation par simulation : scénarios nominal, calibration CaO libre et détection de défaut capteur</li>
-    </ul>
-    <div class="project-tags">
-      <span>Kiln Master</span><span>LabVIEW</span><span>OPC</span><span>AC800M</span><span>Contrôle avancé</span><span>DMAIC</span>
-    </div>
-    <div class="project-video">
-      <video controls preload="none">
-        <source src="videos/kiln master holcim.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
-
-  <!-- Torréfacteur -->
-  <div class="card reveal">
-    <h3>Automatisation et supervision d'un torréfacteur industriel</h3>
-    <p>Développement d'une solution complète d'automatisation et de supervision d'un torréfacteur industriel sous Siemens TIA Portal V16, capable de piloter automatiquement le procédé de torréfaction grâce à la gestion des recettes de production, à la régulation de la température et au contrôle de la vitesse de brassage.</p>
-    <ul class="project-list">
-      <li>Programmation d'un automate Siemens S7-1500 sous TIA Portal V16</li>
-      <li>Développement d'une IHM Siemens KTP700 pour la supervision temps réel et le suivi des alarmes</li>
-      <li>Gestion des modes Manuel et Automatique avec gestion de recettes</li>
-      <li>Régulation de la température et contrôle de la vitesse de brassage</li>
-    </ul>
-    <div class="project-tags">
-      <span>TIA Portal V16</span><span>S7-1500</span><span>KTP700</span><span>Régulation</span>
-    </div>
-    <div class="project-video">
-      <video controls preload="none">
+    <div class="card reveal">
+        <h3 data-i18n="projects.p1.title">Automatisation et supervision d'un torréfacteur industriel</h3>
+        <p data-i18n="projects.p1.desc">Développement d'une solution d'automatisation et de supervision sous Siemens TIA Portal V16, permettant le pilotage automatisé du procédé de torréfaction, avec gestion des recettes et régulation des paramètres essentiels.</p>
+        <ul class="project-list">
+            <li data-i18n="projects.p1.li1">Programmation d'un automate Siemens S7-1500 sous TIA Portal V16</li>
+            <li data-i18n="projects.p1.li2">Développement d'une interface HMI Siemens KTP700 pour la supervision et le suivi des alarmes</li>
+            <li data-i18n="projects.p1.li3">Modes Manuel et Automatique avec gestion des recettes de production</li>
+            <li data-i18n="projects.p1.li4">Régulation de la température et contrôle de la vitesse de brassage</li>
+        </ul>
+        <div class="project-video">
+     
+        <div class="project-tags"><span>TIA Portal V16</span><span>S7-1500</span><span>KTP700</span><span>HMI</span><span>Régulation</span></div>
+         <video controls preload="none">
         <source src="videos/Design sans titre.mp4" type="video/mp4">
       </video>
     </div>
-  </div>
-
-  <!-- Gestion recettes sécurisées -->
-  <div class="card reveal">
-    <h3>Système sécurisé de gestion des recettes industrielles</h3>
-    <p>Conception et développement d'un système sécurisé de gestion des recettes de production sous Siemens TIA Portal V16, garantissant la protection des paramètres critiques grâce à une authentification par mot de passe et un système d'alarmes déclenché après plusieurs tentatives d'accès non autorisées.</p>
-    <ul class="project-list">
-      <li>Authentification par identifiant et mot de passe</li>
-      <li>Gestion des utilisateurs et des niveaux d'accès</li>
-      <li>Alarmes après tentatives de connexion échouées</li>
-      <li>IHM ergonomique dédiée à la gestion sécurisée des recettes</li>
-    </ul>
-    <div class="project-tags">
-      <span>TIA Portal</span><span>Cybersécurité</span><span>Gestion des accès</span><span>IHM</span>
     </div>
-    <div class="project-video">
-      <video controls preload="none">
+
+    <div class="card reveal">
+        <h3 data-i18n="projects.p2.title">Système sécurisé de gestion des recettes industrielles</h3>
+        <p data-i18n="projects.p2.desc">Conception d'un système sécurisé de gestion des recettes de production sous Siemens TIA Portal V16, garantissant la protection des paramètres critiques par authentification et gestion des accès.</p>
+        <ul class="project-list">
+            <li data-i18n="projects.p2.li1">Authentification par identifiant et mot de passe</li>
+            <li data-i18n="projects.p2.li2">Gestion des niveaux d'accès selon les profils utilisateurs</li>
+            <li data-i18n="projects.p2.li3">Génération automatique d'alarmes après plusieurs échecs de connexion</li>
+            <li data-i18n="projects.p2.li4">Interface HMI dédiée à l'administration sécurisée des recettes</li>
+        </ul>
+          <div class="project-video">
+        <div class="project-tags"><span>TIA Portal V16</span><span>HMI</span><span>Gestion des accès</span><span>Cybersécurité industrielle</span></div>
+           <video controls preload="none">
         <source src="videos/media3.mp4" type="video/mp4">
       </video>
     </div>
-  </div>
-
-  <!-- IoT -->
-  <div class="card reveal">
-    <h3>Prototype IoT pour le suivi des paramètres environnementaux</h3>
-    <p>Conception et réalisation d'un prototype IoT destiné à la surveillance en temps réel de la température et de l'humidité : les données sont collectées via un capteur connecté, transmises à une application web développée avec Django REST API et visualisées en temps réel, avec un système de notifications automatiques.</p>
-    <ul class="project-list">
-      <li>Système IoT basé sur ESP8266 et capteur DHT11</li>
-      <li>Application web Django REST API, visualisation JSON / HTML</li>
-      <li>Notifications automatiques via Gmail, WhatsApp et Telegram</li>
-      <li>Conception du PCB (EasyEDA), modélisation 3D du boîtier (Fusion 360) et fabrication par impression 3D</li>
-    </ul>
-    <div class="project-tags">
-      <span>ESP8266</span><span>DHT11</span><span>Django</span><span>REST API</span><span>EasyEDA</span><span>Fusion 360</span>
     </div>
-    <div class="project-image">
+
+    <div class="card reveal">
+        <h3 data-i18n="projects.p3.title">Prototype IoT pour le suivi des paramètres environnementaux</h3>
+        <p data-i18n="projects.p3.desc">Conception d'un prototype IoT pour la surveillance en temps réel de la température et de l'humidité, avec transmission des données vers une application web et notifications automatiques en cas de dépassement de seuils.</p>
+        <ul class="project-list">
+            <li data-i18n="projects.p3.li1">Système embarqué basé sur ESP8266 et capteur DHT11</li>
+            <li data-i18n="projects.p3.li2">Application web avec Django REST API pour la visualisation des données</li>
+            <li data-i18n="projects.p3.li3">Alertes automatiques via Gmail, WhatsApp et Telegram</li>
+            <li data-i18n="projects.p3.li4">Conception du PCB sous EasyEDA et modélisation du boîtier sous Fusion 360</li>
+        </ul>
+  
+        <div class="project-tags"><span>ESP8266</span><span>DHT11</span><span>Django REST API</span><span>EasyEDA</span><span>Fusion 360</span></div>
+                <div class="project-image">
     <img src="image/iot.png" alt="Projet IoT">
 </div>
-  </div>
+    </div>
 
-  <!-- PFA pompage -->
-  <div class="card reveal">
-    <h3>Projet de Fin d'Année — Automatisation d'une station de pompage électrique</h3>
-    <p>Conception et automatisation complète d'une station de pompage électrique conforme au Cahier des Prescriptions Spéciales (CPS), incluant le dimensionnement électrique, les schémas électriques, la programmation de l'automate et une interface de supervision.</p>
-    <ul class="project-list">
-      <li>Schémas électriques normalisés sous QElectroTech</li>
-      <li>Dimensionnement des câbles et choix des protections via Caneco BT</li>
-      <li>Programmation d'un automate industriel avec supervision</li>
-    </ul>
-    <div class="project-tags">
-      <span>QElectroTech</span><span>Caneco BT</span><span>Automatisme</span><span>Supervision</span>
+    <div class="card reveal">
+        <h3 data-i18n="projects.p4.title">Automatisation d'une station de pompage électrique</h3>
+        <p data-i18n="projects.p4.desc">Conception et automatisation d'une station de pompage conforme au Cahier des Prescriptions Spéciales (CPS), intégrant l'étude électrique, le dimensionnement et le pilotage automatisé du système.</p>
+        <ul class="project-list">
+            <li data-i18n="projects.p4.li1">Schémas électriques sous QElectroTech</li>
+            <li data-i18n="projects.p4.li2">Dimensionnement des câbles, protections et équipements via Caneco BT</li>
+            <li data-i18n="projects.p4.li3">Programmation de l'automate et développement d'une interface de supervision</li>
+            <li data-i18n="projects.p4.li4">Vérification de la conformité technique de l'installation</li>
+        </ul>
+        <div class="project-tags"><span>QElectroTech</span><span>Caneco BT</span><span>Automatisme</span><span>Supervision</span></div>
+        <div class="project-video">
+            <video controls>
+                <source src="videos/media2.mp4" type="video/mp4">
+            </video>
+        </div>
     </div>
-    <div class="project-video">
-      <video controls preload="none">
-        <source src="videos/media2.mp4" type="video/mp4">
-      </video>
-    </div>
-  </div>
 
-  <!-- SMQ -->
-  <div class="card reveal">
-    <h3>Conception d'un Système de Management de la Qualité (SMQ)</h3>
-    <p>Développement d'un Système de Management de la Qualité pour un établissement d'enseignement supérieur, en s'appuyant sur les principes de la norme ISO 9001:2015.</p>
-    <ul class="project-list">
-      <li>Cartographie et modélisation des processus stratégiques, opérationnels et supports</li>
-      <li>Élaboration de la documentation qualité (politique qualité, procédures et manuel qualité)</li>
-      <li>Définition d'indicateurs de performance (KPI) pour le suivi des processus</li>
-      <li>Mise en œuvre d'une approche basée sur les risques et les opportunités</li>
-      <li>Proposition d'actions d'amélioration continue à partir de l'analyse des dysfonctionnements</li>
-    </ul>
-    <div class="project-tags">
-      <span>ISO 9001:2015</span><span>PDCA</span><span>KPI</span><span>Gestion des risques</span><span>CAPA</span>
+    <div class="card reveal">
+        <h3 data-i18n="projects.p5.title">Système de Management de la Qualité (SMQ)</h3>
+        <p data-i18n="projects.p5.desc">Développement d'un Système de Management de la Qualité pour un établissement d'enseignement supérieur, selon la norme ISO 9001:2015, pour structurer les processus et instaurer une démarche d'amélioration continue.</p>
+        <ul class="project-list">
+            <li data-i18n="projects.p5.li1">Cartographie des processus stratégiques, opérationnels et supports</li>
+            <li data-i18n="projects.p5.li2">Élaboration de la documentation qualité (politique, procédures, manuel qualité)</li>
+            <li data-i18n="projects.p5.li3">Définition d'indicateurs de performance (KPI) pour le suivi des processus</li>
+            <li data-i18n="projects.p5.li4">Approche basée sur les risques et propositions d'actions correctives</li>
+        </ul>
+        <div class="project-tags"><span>ISO 9001:2015</span><span>PDCA</span><span>KPI</span><span>CAPA</span></div>
     </div>
-  </div>
 
-  <!-- CATIA -->
-  <div class="card reveal">
-    <h3>Modélisation mécanique sous CATIA V5</h3>
-    <p>Réalisation de plusieurs projets de conception mécanique sous CATIA V5, incluant la modélisation 3D de pièces mécaniques, la création d'assemblages et l'élaboration de plans techniques cotés.</p>
-    <ul class="project-list">
-      <li>Modélisation 3D de pièces mécaniques</li>
-      <li>Réalisation d'assemblages fonctionnels</li>
-      <li>Élaboration de plans cotés conformes aux exigences de fabrication</li>
-      <li>Respect des contraintes géométriques et fonctionnelles</li>
-    </ul>
-    <div class="project-tags">
-      <span>CATIA V5</span><span>Modélisation 3D</span><span>Assemblages</span><span>Plans cotés</span>
+    <div class="card reveal">
+        <h3 data-i18n="projects.p6.title">Modélisation mécanique sous CATIA V5</h3>
+        <p data-i18n="projects.p6.desc">Réalisation de projets de conception mécanique assistée par ordinateur : modélisation de pièces, création d'assemblages et production de plans techniques conformes aux exigences de fabrication.</p>
+        <ul class="project-list">
+            <li data-i18n="projects.p6.li1">Modélisation 3D de pièces mécaniques</li>
+            <li data-i18n="projects.p6.li2">Réalisation d'assemblages fonctionnels</li>
+            <li data-i18n="projects.p6.li3">Élaboration de plans cotés</li>
+        </ul>
+        <div class="project-tags"><span>CATIA V5</span><span>Modélisation 3D</span><span>Mise en plan</span></div>
+        <div class="catia-gallery">
+            <img src="image/catia1.png" alt="Modélisation CATIA 1" onclick="openLightbox(this.src)">
+            <img src="image/catia2.png" alt="Modélisation CATIA 2" onclick="openLightbox(this.src)">
+            <img src="image/catia3.png" alt="Modélisation CATIA 3" onclick="openLightbox(this.src)">
+        </div>
     </div>
-    <div class="catia-gallery">
-      <img src="image/catia1.png" alt="Modélisation CATIA 1" onclick="openLB(this.src)">
-      <img src="image/catia2.png" alt="Modélisation CATIA 2" onclick="openLB(this.src)">
-      <img src="image/catia3.png" alt="Modélisation CATIA 3" onclick="openLB(this.src)">
-    </div>
-  </div>
 
-  <!-- Gestion employés -->
-  <div class="card reveal">
-    <h3>Système de gestion des employés</h3>
-    <p>Développement d'une application de gestion des employés basée sur une base de données relationnelle : analyse des besoins, modélisation avec les méthodes MCD et MLD, et implémentation en SQL.</p>
-    <ul class="project-list">
-      <li>Modélisation de la base de données (méthode Merise — MCD & MLD)</li>
-      <li>Conception des relations entre entités</li>
-      <li>Implémentation et requêtes SQL</li>
-    </ul>
-    <div class="project-tags">
-      <span>SQL</span><span>Merise</span><span>MCD</span><span>MLD</span>
+    <div class="card reveal">
+        <h3 data-i18n="projects.p7.title">Système de gestion des employés</h3>
+        <p data-i18n="projects.p7.desc">Développement d'une application de gestion des employés basée sur une base de données relationnelle, pour l'organisation et le suivi des informations du personnel.</p>
+        <ul class="project-list">
+            <li data-i18n="projects.p7.li1">Analyse des besoins fonctionnels</li>
+            <li data-i18n="projects.p7.li2">Modélisation de la base de données selon la méthode Merise (MCD & MLD)</li>
+            <li data-i18n="projects.p7.li3">Développement des requêtes SQL pour la gestion des données</li>
+        </ul>
+        <div class="project-tags"><span>SQL</span><span>Merise</span><span>MCD</span><span>MLD</span></div>
     </div>
-  </div>
-
 </section>
 
-<!-- ═══════ STAGES ═══════ -->
+<!-- ═══════ EXPÉRIENCES ═══════ -->
 <section id="stages">
-  <div class="section-label reveal">Expériences</div>
-  <h2 class="section-title reveal">Stages & <span>Expériences professionnelles</span></h2>
+    <span class="section-label reveal" data-i18n="stages.label">05 Expériences terrain</span>
+    <h2 class="section-title reveal" data-i18n-html="stages.titleHtml">Parcours <span>professionnel</span></h2>
+    <p class="section-sub reveal" data-i18n="stages.sub">Cinq expériences en industrie lourde, ferroviaire, agroalimentaire et énergie.</p>
 
-  <div class="timeline">
+    <div class="timeline">
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <span class="pfe-badge-inline"><i class="fas fa-star"></i> <span data-i18n="stages.pfeBadge">Projet de Fin d'Études</span></span>
+                <div class="stage-header">
+                    <h3 data-i18n="stages.e1.title">Ingénieure Stagiaire — Automatisation & Contrôle Avancé des Procédés</h3>
+                    <span class="stage-date">Fév. 2026 — Juin 2026</span>
+                </div>
+                <div class="stage-company"><i class="fas fa-industry"></i> Holcim Oujda</div>
+                <ul class="stage-list">
+                    <li data-i18n="stages.e1.li1">Étude de faisabilité de l'intégration du système Kiln Master sur la ligne de cuisson</li>
+                    <li data-i18n="stages.e1.li2">Identification, qualification et validation des signaux nécessaires au contrôle avancé</li>
+                    <li data-i18n="stages.e1.li3">Configuration des communications OPC entre ABB AC800M et le serveur HLC</li>
+                    <li data-i18n="stages.e1.li4">Développement d'un prototype LabVIEW intégrant trois boucles de régulation (BZT, ID Fan, alimentation farine)</li>
+                    <li data-i18n="stages.e1.li5">Validation du prototype par simulation de différents scénarios de fonctionnement</li>
+                </ul>
+                <div class="stage-tags">
+                    <span class="stage-tag">LabVIEW</span>
+                    <span class="stage-tag">OPC</span>
+                    <span class="stage-tag">ABB AC800M</span>
+                    <span class="stage-tag">DMAIC</span>
+                </div>
+                <div class="stage-video">
+                    <video controls>
+                        <source src="videos/kiln master holcim.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
 
-    <!-- PFE HOLCIM -->
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <span class="pfe-badge-inline"><i class="fas fa-star"></i> Projet de Fin d'Études</span>
-        <div class="stage-header">
-          <h3>Étude de faisabilité Kiln Master & Prototype LabVIEW</h3>
-          <span class="stage-date">Fév. 2026 — Juin 2026</span>
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="stage-header">
+                    <h3 data-i18n="stages.e2.title">Stagiaire en Maintenance Industrielle</h3>
+                    <span class="stage-date">Août 2025</span>
+                </div>
+                <div class="stage-company"><i class="fas fa-train"></i> ONCF — Office National des Chemins de Fer</div>
+                <ul class="stage-list">
+                    <li data-i18n="stages.e2.li1">Découverte des systèmes ferroviaires et de leur organisation de maintenance</li>
+                    <li data-i18n="stages.e2.li2">Participation aux opérations de maintenance préventive et corrective</li>
+                    <li data-i18n="stages.e2.li3">Initiation à la Gestion de la Maintenance des Ouvrages (GMO)</li>
+                    <li data-i18n="stages.e2.li4">Observation des méthodes de diagnostic et de fiabilisation des équipements</li>
+                </ul>
+                <div class="stage-tags">
+                    <span class="stage-tag">Maintenance industrielle</span>
+                    <span class="stage-tag">GMO</span>
+                    <span class="stage-tag">Diagnostic</span>
+                    <span class="stage-tag">Fiabilité</span>
+                </div>
+            </div>
         </div>
-        <div class="stage-company"><i class="fas fa-industry"></i> Holcim Oujda · Ingénieure stagiaire — Contrôle avancé des procédés</div>
-        <ul class="stage-list">
-          <li>Réalisation d'une étude de faisabilité pour l'intégration du système Kiln Master</li>
-          <li>Identification et qualification des signaux nécessaires au fonctionnement du système</li>
-          <li>Analyse de la fiabilité de l'instrumentation et proposition d'actions d'amélioration</li>
-          <li>Création des tags OPC pour la communication ABB AC800M ↔ HLC Server</li>
-          <li>Développement d'un prototype fonctionnel sous LabVIEW : 3 boucles de régulation (BZT · ID Fan · Alimentation farine)</li>
-          <li>Validation par simulation : 3 scénarios concluants (nominal · calibration CaO libre · détection défaut capteur)</li>
-        </ul>
-        <div class="stage-tags">
-          <span class="stage-tag">Kiln Master</span>
-          <span class="stage-tag">LabVIEW</span>
-          <span class="stage-tag">AC800M</span>
-          <span class="stage-tag">OPC</span>
-          <span class="stage-tag">DMAIC</span>
+
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="stage-header">
+                    <h3 data-i18n="stages.e3.title">Stagiaire en Contrôle Qualité & Sécurité Industrielle</h3>
+                    <span class="stage-date">Septembre 2024</span>
+                </div>
+                <div class="stage-company"><i class="fas fa-flask"></i> Atlas Bottling Company (ABCO Coca-Cola) — Oujda</div>
+                <ul class="stage-list">
+                    <li data-i18n="stages.e3.li1">Contrôles qualité des bouteilles en verre et analyses de CO₂, d'ozone et des boissons</li>
+                    <li data-i18n="stages.e3.li2">Participation aux inspections HSE et suivi des check-lists de sécurité</li>
+                    <li data-i18n="stages.e3.li3">Application de la procédure LOTO pour la sécurisation des interventions</li>
+                    <li data-i18n="stages.e3.li4">Vérification de la conformité des équipements et dispositifs de sécurité</li>
+                </ul>
+                <div class="stage-tags">
+                    <span class="stage-tag">Contrôle qualité</span>
+                    <span class="stage-tag">HSE</span>
+                    <span class="stage-tag">ISO 9001</span>
+                    <span class="stage-tag">LOTO</span>
+                </div>
+            </div>
         </div>
-        <div class="stage-video">
-          <video controls preload="none">
-            <source src="videos/kiln master holcim.mp4" type="video/mp4">
-          </video>
+
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="stage-header">
+                    <h3 data-i18n="stages.e4.title">Stagiaire en Optimisation Énergétique</h3>
+                    <span class="stage-date">Avr. 2023 — Juil. 2023</span>
+                </div>
+                <div class="stage-company"><i class="fas fa-leaf"></i> Holcim Oujda</div>
+                <ul class="stage-list">
+                    <li data-i18n="stages.e4.li1">Analyse des consommations énergétiques des installations industrielles</li>
+                    <li data-i18n="stages.e4.li2">Identification d'opportunités d'amélioration de la performance énergétique</li>
+                    <li data-i18n="stages.e4.li3">Participation aux actions d'optimisation des procédés</li>
+                </ul>
+                <div class="stage-tags">
+                    <span class="stage-tag">Audit énergétique</span>
+                    <span class="stage-tag">Efficacité énergétique</span>
+                    <span class="stage-tag">Performance industrielle</span>
+                </div>
+            </div>
         </div>
-      </div>
+
+        <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+                <div class="stage-header">
+                    <h3 data-i18n="stages.e5.title">Stage d'Initiation — Électrotechnique</h3>
+                    <span class="stage-date">Août 2022</span>
+                </div>
+                <div class="stage-company"><i class="fas fa-lightbulb"></i> MARMALEC — Oujda</div>
+                <ul class="stage-list">
+                    <li data-i18n="stages.e5.li1">Participation à l'installation et à la maintenance de systèmes d'éclairage public</li>
+                    <li data-i18n="stages.e5.li2">Découverte des équipements électriques et des interventions de terrain</li>
+                </ul>
+                <div class="stage-tags">
+                    <span class="stage-tag">Électrotechnique</span>
+                    <span class="stage-tag">Maintenance</span>
+                    <span class="stage-tag">Éclairage public</span>
+                </div>
+            </div>
+        </div>
     </div>
+</section>
 
-    <!-- ONCF -->
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <div class="stage-header">
-          <h3>Stagiaire en Maintenance Industrielle</h3>
-          <span class="stage-date">Août 2025</span>
+<!-- ═══════ CERTIFICATIONS ═══════ -->
+<section id="certifications">
+    <span class="section-label reveal" data-i18n="certs.label">Qualité certifiée</span>
+    <h2 class="section-title reveal" data-i18n="certs.title">Certifications</h2>
+
+    <div class="card reveal">
+        <h3 data-i18n="certs.cardTitle">ISO 9001:2015 — Système de Management de la Qualité (QMS Foundations)</h3>
+        <p><i class="fa-solid fa-calendar"></i> <span data-i18n="certs.cardMeta">Knights of Safety Academy · Obtenue en août 2024</span></p>
+        <div class="cert-skills">
+            <div class="skill-tags"><span data-i18n="certs.tag1">Exigences ISO 9001:2015</span></div>
+            <div class="skill-tags"><span data-i18n="certs.tag2">Approche processus</span></div>
+            <div class="skill-tags"><span data-i18n="certs.tag3">Management de la qualité</span></div>
+            <div class="skill-tags"><span data-i18n="certs.tag4">Gestion des risques</span></div>
+            <div class="skill-tags"><span data-i18n="certs.tag5">Actions correctives (CAPA)</span></div>
+            <div class="skill-tags"><span data-i18n="certs.tag6">Pilotage par KPI</span></div>
         </div>
-        <div class="stage-company"><i class="fas fa-train"></i> ONCF — Office National des Chemins de Fer</div>
-        <ul class="stage-list">
-          <li>Découverte des systèmes ferroviaires et des équipements de maintenance</li>
-          <li>Initiation à la Gestion de la Maintenance des Ouvrages (GMO)</li>
-          <li>Participation aux opérations de maintenance industrielle</li>
-          <li>Observation des méthodes de diagnostic et de fiabilisation des équipements</li>
-        </ul>
-        <div class="stage-tags">
-          <span class="stage-tag">Maintenance industrielle</span>
-          <span class="stage-tag">GMO</span>
-          <span class="stage-tag">Diagnostic</span>
-          <span class="stage-tag">Fiabilité</span>
-        </div>
-      </div>
     </div>
-
-    <!-- ABCO -->
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <div class="stage-header">
-          <h3>Stagiaire en Contrôle Qualité & Sécurité Industrielle</h3>
-          <span class="stage-date">Septembre 2024</span>
-        </div>
-        <div class="stage-company"><i class="fas fa-flask"></i> Atlas Bottling Company (ABCO Coca-Cola) — Oujda</div>
-        <ul class="stage-list">
-          <li>Contrôles qualité des bouteilles en verre · analyses CO₂, ozone et boissons</li>
-          <li>Participation aux inspections HSE · suivi des check-lists de sécurité</li>
-          <li>Application de la procédure LOTO pour la sécurisation des interventions</li>
-          <li>Vérification de la conformité des équipements et des dispositifs de sécurité</li>
-        </ul>
-        <div class="stage-tags">
-          <span class="stage-tag">Contrôle qualité</span>
-          <span class="stage-tag">ISO 9001</span>
-          <span class="stage-tag">HSE</span>
-          <span class="stage-tag">LOTO</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Holcim Energie -->
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <div class="stage-header">
-          <h3>Stagiaire en Optimisation Énergétique</h3>
-          <span class="stage-date">Avr. 2023 — Juil. 2023</span>
-        </div>
-        <div class="stage-company"><i class="fas fa-leaf"></i> LafargeHolcim — Holcim Oujda</div>
-        <ul class="stage-list">
-          <li>Analyse des consommations énergétiques des installations industrielles</li>
-          <li>Identification d'opportunités d'amélioration de la performance énergétique</li>
-          <li>Participation aux actions d'optimisation des procédés</li>
-        </ul>
-        <div class="stage-tags">
-          <span class="stage-tag">Audit énergétique</span>
-          <span class="stage-tag">Efficacité énergétique</span>
-          <span class="stage-tag">Performance industrielle</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- MARMALEC -->
-    <div class="timeline-item reveal">
-      <div class="timeline-dot"></div>
-      <div class="timeline-card">
-        <div class="stage-header">
-          <h3>Stage d'initiation — Électrotechnique</h3>
-          <span class="stage-date">Août 2022</span>
-        </div>
-        <div class="stage-company"><i class="fas fa-lightbulb"></i> MARMALEC — Oujda</div>
-        <ul class="stage-list">
-          <li>Participation à l'installation et à la maintenance de systèmes d'éclairage public</li>
-          <li>Découverte des équipements électriques et des interventions de terrain</li>
-        </ul>
-        <div class="stage-tags">
-          <span class="stage-tag">Électrotechnique</span>
-          <span class="stage-tag">Éclairage public</span>
-        </div>
-      </div>
-    </div>
-
-  </div>
 </section>
 
 <!-- ═══════ CONTACT ═══════ -->
-<section id="contact" class="contact-section reveal">
-  <h2 class="contact-title">Contactez-moi</h2>
-  <div class="contact-container">
-    <div class="contact-info">
-      <h3>Restons en contact</h3>
-      <p>N'hésitez pas à me contacter via l'un des moyens suivants :</p>
-      <div class="info-box">
-        <i class="fas fa-envelope"></i>
-        <span>Email : <a href="mailto:soukainahammadi09@gmail.com">soukainahammadi09@gmail.com</a></span>
-      </div>
-      <div class="info-box">
-        <i class="fab fa-linkedin"></i>
-        <span>LinkedIn : <a href="https://www.linkedin.com/in/soukaina-hammadi-b36766291" target="_blank">@soukaina-hammadi</a></span>
-      </div>
-      <div class="info-box">
-        <i class="fas fa-phone"></i>
-        <span>Téléphone : +212 7 07 73 45 87</span>
-      </div>
-      <div class="info-box">
-        <i class="fas fa-globe"></i>
-        <span>Portfolio : <a href="https://soukk315.github.io/portfolio" target="_blank">soukk315.github.io/portfolio</a></span>
-      </div>
+<section id="contact" class="contact-section">
+    <h2 class="contact-title reveal" data-i18n="contact.title">Me Contacter</h2>
+    <div class="contact-container">
+        <div class="contact-info reveal-l">
+            <h3 data-i18n="contact.infoTitle">Restons en contact</h3>
+            <p data-i18n="contact.infoP">N'hésitez pas à me contacter via l'un des moyens suivants pour toute opportunité professionnelle.</p>
+            <div class="info-box">
+                <i class="fas fa-envelope"></i>
+                <span><a href="mailto:soukainahammadi09@gmail.com">soukainahammadi09@gmail.com</a></span>
+            </div>
+            <div class="info-box">
+                <i class="fab fa-linkedin"></i>
+                <span><a href="https://www.linkedin.com/in/soukaina-hammadi" target="_blank" rel="noopener">@soukaina hammadi</a></span>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-phone"></i>
+                <span><a href="tel:+212707734587">+212 7 07 73 45 87</a></span>
+            </div>
+            <div class="info-box">
+                <i class="fas fa-location-dot"></i>
+                <span>Oujda, Hay Al Andalou, Résidence Kenzi 1</span>
+            </div>
+
+            <div class="social-row">
+                <a href="mailto:soukainahammadi09@gmail.com" class="social-btn" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/soukaina-hammadi" target="_blank" rel="noopener" class="social-btn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="tel:+212707734587" class="social-btn" aria-label="Téléphone"><i class="fas fa-phone"></i></a>
+                <a href="assets/CV_Soukaina_Hammadi.pdf" download class="social-btn" aria-label="Télécharger le CV"><i class="fas fa-file-arrow-down"></i></a>
+            </div>
+        </div>
+
+        <div class="contact-form reveal-r">
+            <h3 data-i18n="contact.formTitle">Envoyez-moi un message</h3>
+            <form id="contactForm">
+                <input type="text" placeholder="Votre nom" required data-i18n-placeholder="contact.namePh">
+                <input type="email" placeholder="Votre email" required data-i18n-placeholder="contact.emailPh">
+                <textarea placeholder="Votre message" rows="6" required data-i18n-placeholder="contact.messagePh"></textarea>
+                <button type="submit" data-i18n="contact.submitBtn">Envoyer le message</button>
+                <p class="form-note" id="formNote"></p>
+            </form>
+        </div>
     </div>
-    <div class="contact-form">
-      <h3>Envoyez-moi un message</h3>
-      <form onsubmit="return false;">
-        <input type="text" placeholder="Votre nom" required>
-        <input type="email" placeholder="Votre email" required>
-        <input type="text" placeholder="Sujet">
-        <textarea placeholder="Votre message" rows="5" required></textarea>
-        <button type="submit"><i class="fas fa-paper-plane"></i> Envoyer le message</button>
-      </form>
-    </div>
-  </div>
 </section>
 
-<!-- ═══════ FOOTER ═══════ -->
 <footer>
-  <p>© 2026 <span>Soukaina Hammadi</span> · Ingénieure d'État GSI · EHEI Oujda</p>
+    <p>© 2026 <span>Soukaina Hammadi</span> — <span data-i18n="footer.text">Ingénieure en Génie des Systèmes Industriels</span></p>
 </footer>
 
-<!-- SCROLL TOP -->
-<a href="#" class="scroll-top" id="scrollTop" aria-label="Retour en haut"><i class="fa-solid fa-arrow-up"></i></a>
+<button class="scroll-top" id="scrollTop" aria-label="Retour en haut"><i class="fas fa-arrow-up"></i></button>
 
-<!-- LIGHTBOX -->
-<div id="lb" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:9999;align-items:center;justify-content:center;" onclick="this.style.display='none'">
-  <img id="lbimg" src="" style="max-width:90vw;max-height:88vh;border-radius:12px;">
+<!-- Lightbox galerie -->
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fermer">&times;</button>
+    <img src="" alt="Aperçu agrandi" id="lightboxImg">
 </div>
 
 <script>
-/* REVEAL */
-const io = new IntersectionObserver(e => {
-  e.forEach(x => { if(x.isIntersecting){ x.target.classList.add('is-visible'); io.unobserve(x.target); } });
-}, { threshold: 0.12 });
-document.querySelectorAll('.reveal,.reveal-l,.reveal-r,.reveal-stagger').forEach(el => io.observe(el));
+/* ═══════════════════════════════════════════════════
+   SOUKAINA HAMMADI — PORTFOLIO
+   Dictionnaire de traductions FR / EN
+═══════════════════════════════════════════════════ */
 
-/* NAV SCROLL */
-window.addEventListener('scroll', () => {
-  document.getElementById('navbar').classList.toggle('scrolled', scrollY > 50);
-  const btn = document.getElementById('scrollTop');
-  btn.classList.toggle('show', scrollY > 500);
-});
+const translations = {
+  fr: {
+    "nav.about": "À propos",
+    "nav.academics": "Formation",
+    "nav.skills": "Compétences",
+    "nav.projects": "Projets",
+    "nav.stages": "Expériences",
+    "nav.certifications": "Certifications",
+    "nav.contact": "Contact",
+    "nav.cta": "CV",
 
-/* SCROLL TOP */
-document.getElementById('scrollTop').addEventListener('click', e => {
-  e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' });
-});
+    "hero.badge": "Disponible pour un poste d'Ingénieure Industrielle",
+    "hero.role": "Ingénieure en Génie des Systèmes Industriels",
+    "hero.tagline": "Automatisation industrielle, qualité, logistique et amélioration continue : je conçois des solutions industrielles fiables, j'optimise les procédés et je contribue à la performance des entreprises.",
+    "hero.btnProjects": "Voir mes projets",
+    "hero.btnCV": "Télécharger mon CV",
+    "hero.btnContact": "Me contacter",
+    "hero.stat1": "ANNÉES DE FORMATION",
+    "hero.stat2": "PROJETS RÉALISÉS",
+    "hero.stat3": "EXPÉRIENCES TERRAIN",
+    "hero.stat4": "TECHNOLOGIES",
 
-/* COUNTERS */
-const co = new IntersectionObserver(e => {
-  e.forEach(x => {
-    if(x.isIntersecting && !x.target.dataset.done){
-      x.target.dataset.done = '1';
-      const t = +x.target.dataset.target, inc = t/40; let c = 0;
-      const iv = setInterval(() => {
-        c += inc; if(c >= t){ c = t; clearInterval(iv); }
-        x.target.textContent = Math.floor(c) + '+';
-      }, 40);
+    "about.label": "Qui suis-je",
+    "about.titleHtml": "À propos <span>de moi</span>",
+    "about.p1": "Ingénieure d'État en Génie des Systèmes Industriels, je mets l'ingénierie au service de la performance industrielle en combinant analyse, optimisation et innovation. Mon parcours académique et mes expériences en entreprise m'ont permis d'appréhender les systèmes de production dans leur globalité, depuis l'étude des procédés et l'analyse des performances jusqu'au développement de solutions techniques adaptées aux enjeux de l'industrie.",
+    "about.p2": "Animée par une volonté constante d'apprendre et de progresser, je souhaite intégrer un environnement industriel stimulant où je pourrai contribuer à l'amélioration des procédés, à l'excellence opérationnelle et à la création de valeur.",
+    "about.highlight": "5 expériences terrain dans des secteurs exigeants : cimenterie, ferroviaire, agroalimentaire et énergie.",
+
+    "academics.label": "Parcours académique",
+    "academics.title": "Formation",
+    "academics.sub": "Un parcours construit progressivement, de l'efficacité énergétique à l'ingénierie des systèmes industriels.",
+    "academics.c1.title": "Ingénieure d'État en Génie des Systèmes Industriels",
+    "academics.c1.school": "EHEI Oujda · Maroc — Option Productique",
+    "academics.c1.desc": "Formation d'ingénieur généraliste en systèmes industriels : automatisation, qualité, gestion de production et amélioration continue.",
+    "academics.c2.title": "Technicienne Spécialisée en Efficacité Énergétique",
+    "academics.c2.school": "IFMEREE Oujda · Maroc",
+    "academics.c2.desc": "Spécialisation en audit énergétique et efficacité des installations industrielles.",
+    "academics.c3.title": "Baccalauréat Sciences Physiques",
+    "academics.c3.school": "Lycée Qadi Ibn Al Arabi · Oujda",
+    "academics.c3.desc": "Base scientifique en physique appliquée, fondement de mon parcours en ingénierie.",
+
+    "skills.label": "Expertise technique",
+    "skills.titleHtml": "Compétences <span>clés</span>",
+    "skills.sub": "Une expertise transverse, du terrain à l'analyse, couvrant l'ensemble de la chaîne de performance industrielle.",
+    "skills.s1.title": "Qualité Industrielle",
+    "skills.s1.desc": "Maîtrise des outils de contrôle qualité, de l'analyse des non-conformités et de la mise en œuvre d'actions correctives, avec application des principes de la norme ISO 9001.",
+    "skills.s2.title": "Amélioration Continue",
+    "skills.s2.desc": "Analyse des performances industrielles, identification des opportunités d'amélioration et application des méthodologies Lean Manufacturing, Six Sigma, DMAIC et PDCA.",
+    "skills.s3.title": "Automatisme & Informatique Industrielle",
+    "skills.s3.desc": "Développement de solutions d'automatisation sous Siemens TIA Portal et LabVIEW, programmation d'automates, conception d'interfaces HMI et supervision de procédés.",
+    "skills.s4.title": "Contrôle-Commande",
+    "skills.s4.desc": "Configuration de communications industrielles (OPC) et développement de boucles de régulation pour la supervision de procédés en temps réel.",
+    "skills.s5.title": "Gestion de Production & Logistique",
+    "skills.s5.desc": "Connaissances en gestion de production, gestion des stocks, planification industrielle et coordination de projets en environnement de production.",
+    "skills.s6.title": "Efficacité Énergétique",
+    "skills.s6.desc": "Réalisation d'audits énergétiques, analyse des consommations et proposition de solutions pour améliorer l'efficacité énergétique des installations industrielles.",
+    "skills.s7.title": "Génie Industriel",
+    "skills.s7.desc": "Analyse globale des systèmes de production, de l'étude des procédés au développement de solutions techniques adaptées aux enjeux de l'industrie.",
+    "skills.s8.title": "Digitalisation Industrielle",
+    "skills.s8.desc": "Développement d'applications web de supervision, conception de bases de données et prototypes IoT pour la surveillance en temps réel des procédés.",
+    "skills.softwareTitle": "Logiciels & outils maîtrisés",
+
+    "projects.label": "07 Réalisations",
+    "projects.titleHtml": "Projets <span>techniques</span>",
+    "projects.sub": "Des projets académiques et personnels couvrant l'automatisation, la qualité, l'IoT industriel et la conception mécanique.",
+
+    "projects.p1.title": "Automatisation et supervision d'un torréfacteur industriel",
+    "projects.p1.desc": "Développement d'une solution d'automatisation et de supervision sous Siemens TIA Portal V16, permettant le pilotage automatisé du procédé de torréfaction, avec gestion des recettes et régulation des paramètres essentiels.",
+    "projects.p1.li1": "Programmation d'un automate Siemens S7-1500 sous TIA Portal V16",
+    "projects.p1.li2": "Développement d'une interface HMI Siemens KTP700 pour la supervision et le suivi des alarmes",
+    "projects.p1.li3": "Modes Manuel et Automatique avec gestion des recettes de production",
+    "projects.p1.li4": "Régulation de la température et contrôle de la vitesse de brassage",
+
+    "projects.p2.title": "Système sécurisé de gestion des recettes industrielles",
+    "projects.p2.desc": "Conception d'un système sécurisé de gestion des recettes de production sous Siemens TIA Portal V16, garantissant la protection des paramètres critiques par authentification et gestion des accès.",
+    "projects.p2.li1": "Authentification par identifiant et mot de passe",
+    "projects.p2.li2": "Gestion des niveaux d'accès selon les profils utilisateurs",
+    "projects.p2.li3": "Génération automatique d'alarmes après plusieurs échecs de connexion",
+    "projects.p2.li4": "Interface HMI dédiée à l'administration sécurisée des recettes",
+
+    "projects.p3.title": "Prototype IoT pour le suivi des paramètres environnementaux",
+    "projects.p3.desc": "Conception d'un prototype IoT pour la surveillance en temps réel de la température et de l'humidité, avec transmission des données vers une application web et notifications automatiques en cas de dépassement de seuils.",
+    "projects.p3.li1": "Système embarqué basé sur ESP8266 et capteur DHT11",
+    "projects.p3.li2": "Application web avec Django REST API pour la visualisation des données",
+    "projects.p3.li3": "Alertes automatiques via Gmail, WhatsApp et Telegram",
+    "projects.p3.li4": "Conception du PCB sous EasyEDA et modélisation du boîtier sous Fusion 360",
+
+    "projects.p4.title": "Automatisation d'une station de pompage électrique",
+    "projects.p4.desc": "Conception et automatisation d'une station de pompage conforme au Cahier des Prescriptions Spéciales (CPS), intégrant l'étude électrique, le dimensionnement et le pilotage automatisé du système.",
+    "projects.p4.li1": "Schémas électriques sous QElectroTech",
+    "projects.p4.li2": "Dimensionnement des câbles, protections et équipements via Caneco BT",
+    "projects.p4.li3": "Programmation de l'automate et développement d'une interface de supervision",
+    "projects.p4.li4": "Vérification de la conformité technique de l'installation",
+
+    "projects.p5.title": "Système de Management de la Qualité (SMQ)",
+    "projects.p5.desc": "Développement d'un Système de Management de la Qualité pour un établissement d'enseignement supérieur, selon la norme ISO 9001:2015, pour structurer les processus et instaurer une démarche d'amélioration continue.",
+    "projects.p5.li1": "Cartographie des processus stratégiques, opérationnels et supports",
+    "projects.p5.li2": "Élaboration de la documentation qualité (politique, procédures, manuel qualité)",
+    "projects.p5.li3": "Définition d'indicateurs de performance (KPI) pour le suivi des processus",
+    "projects.p5.li4": "Approche basée sur les risques et propositions d'actions correctives",
+
+    "projects.p6.title": "Modélisation mécanique sous CATIA V5",
+    "projects.p6.desc": "Réalisation de projets de conception mécanique assistée par ordinateur : modélisation de pièces, création d'assemblages et production de plans techniques conformes aux exigences de fabrication.",
+    "projects.p6.li1": "Modélisation 3D de pièces mécaniques",
+    "projects.p6.li2": "Réalisation d'assemblages fonctionnels",
+    "projects.p6.li3": "Élaboration de plans cotés",
+
+    "projects.p7.title": "Système de gestion des employés",
+    "projects.p7.desc": "Développement d'une application de gestion des employés basée sur une base de données relationnelle, pour l'organisation et le suivi des informations du personnel.",
+    "projects.p7.li1": "Analyse des besoins fonctionnels",
+    "projects.p7.li2": "Modélisation de la base de données selon la méthode Merise (MCD & MLD)",
+    "projects.p7.li3": "Développement des requêtes SQL pour la gestion des données",
+
+    "stages.label": "05 Expériences terrain",
+    "stages.titleHtml": "Parcours <span>professionnel</span>",
+    "stages.sub": "Cinq expériences en industrie lourde, ferroviaire, agroalimentaire et énergie.",
+    "stages.pfeBadge": "Projet de Fin d'Études",
+
+    "stages.e1.title": "Ingénieure Stagiaire — Automatisation & Contrôle Avancé des Procédés",
+    "stages.e1.li1": "Étude de faisabilité de l'intégration du système Kiln Master sur la ligne de cuisson",
+    "stages.e1.li2": "Identification, qualification et validation des signaux nécessaires au contrôle avancé",
+    "stages.e1.li3": "Configuration des communications OPC entre ABB AC800M et le serveur HLC",
+    "stages.e1.li4": "Développement d'un prototype LabVIEW intégrant trois boucles de régulation (BZT, ID Fan, alimentation farine)",
+    "stages.e1.li5": "Validation du prototype par simulation de différents scénarios de fonctionnement",
+
+    "stages.e2.title": "Stagiaire en Maintenance Industrielle",
+    "stages.e2.li1": "Découverte des systèmes ferroviaires et de leur organisation de maintenance",
+    "stages.e2.li2": "Participation aux opérations de maintenance préventive et corrective",
+    "stages.e2.li3": "Initiation à la Gestion de la Maintenance des Ouvrages (GMO)",
+    "stages.e2.li4": "Observation des méthodes de diagnostic et de fiabilisation des équipements",
+
+    "stages.e3.title": "Stagiaire en Contrôle Qualité & Sécurité Industrielle",
+    "stages.e3.li1": "Contrôles qualité des bouteilles en verre et analyses de CO₂, d'ozone et des boissons",
+    "stages.e3.li2": "Participation aux inspections HSE et suivi des check-lists de sécurité",
+    "stages.e3.li3": "Application de la procédure LOTO pour la sécurisation des interventions",
+    "stages.e3.li4": "Vérification de la conformité des équipements et dispositifs de sécurité",
+
+    "stages.e4.title": "Stagiaire en Optimisation Énergétique",
+    "stages.e4.li1": "Analyse des consommations énergétiques des installations industrielles",
+    "stages.e4.li2": "Identification d'opportunités d'amélioration de la performance énergétique",
+    "stages.e4.li3": "Participation aux actions d'optimisation des procédés",
+
+    "stages.e5.title": "Stage d'Initiation — Électrotechnique",
+    "stages.e5.li1": "Participation à l'installation et à la maintenance de systèmes d'éclairage public",
+    "stages.e5.li2": "Découverte des équipements électriques et des interventions de terrain",
+
+    "certs.label": "Qualité certifiée",
+    "certs.title": "Certifications",
+    "certs.cardTitle": "ISO 9001:2015 — Système de Management de la Qualité (QMS Foundations)",
+    "certs.cardMeta": "Knights of Safety Academy · Obtenue en août 2024",
+    "certs.tag1": "Exigences ISO 9001:2015",
+    "certs.tag2": "Approche processus",
+    "certs.tag3": "Management de la qualité",
+    "certs.tag4": "Gestion des risques",
+    "certs.tag5": "Actions correctives (CAPA)",
+    "certs.tag6": "Pilotage par KPI",
+
+    "contact.title": "Me Contacter",
+    "contact.infoTitle": "Restons en contact",
+    "contact.infoP": "N'hésitez pas à me contacter via l'un des moyens suivants pour toute opportunité professionnelle.",
+    "contact.formTitle": "Envoyez-moi un message",
+    "contact.namePh": "Votre nom",
+    "contact.emailPh": "Votre email",
+    "contact.messagePh": "Votre message",
+    "contact.submitBtn": "Envoyer le message",
+    "contact.formNote": "Merci ! Ce formulaire est une démo statique — écris-moi directement à soukainahammadi09@gmail.com.",
+
+    "footer.text": "Ingénieure en Génie des Systèmes Industriels"
+  },
+
+  en: {
+    "nav.about": "About",
+    "nav.academics": "Education",
+    "nav.skills": "Skills",
+    "nav.projects": "Projects",
+    "nav.stages": "Experience",
+    "nav.certifications": "Certifications",
+    "nav.contact": "Contact",
+    "nav.cta": "Resume",
+
+    "hero.badge": "Available for an Industrial Engineering position",
+    "hero.role": "Industrial Systems Engineer",
+    "hero.tagline": "Industrial automation, quality, logistics and continuous improvement: I design reliable industrial solutions, optimize processes, and contribute to company performance.",
+    "hero.btnProjects": "View my projects",
+    "hero.btnCV": "Download my resume",
+    "hero.btnContact": "Contact me",
+    "hero.stat1": "YEARS OF EDUCATION",
+    "hero.stat2": "PROJECTS COMPLETED",
+    "hero.stat3": "FIELD EXPERIENCES",
+    "hero.stat4": "TECHNOLOGIES",
+
+    "about.label": "Who I am",
+    "about.titleHtml": "About <span>me</span>",
+    "about.p1": "As a State Engineer in Industrial Systems Engineering, I put engineering at the service of industrial performance by combining analysis, optimization and innovation. My academic background and professional experiences have allowed me to understand production systems as a whole, from process study and performance analysis to developing technical solutions suited to industry challenges.",
+    "about.p2": "Driven by a constant will to learn and grow, I want to join a stimulating industrial environment where I can contribute to process improvement, operational excellence and value creation.",
+    "about.highlight": "5 field experiences in demanding industries: cement, railway, food & beverage, and energy.",
+
+    "academics.label": "Academic background",
+    "academics.title": "Education",
+    "academics.sub": "A path built progressively, from energy efficiency to industrial systems engineering.",
+    "academics.c1.title": "State Engineer in Industrial Systems Engineering",
+    "academics.c1.school": "EHEI Oujda · Morocco — Productics Track",
+    "academics.c1.desc": "Generalist engineering program in industrial systems: automation, quality, production management and continuous improvement.",
+    "academics.c2.title": "Specialized Technician in Energy Efficiency",
+    "academics.c2.school": "IFMEREE Oujda · Morocco",
+    "academics.c2.desc": "Specialization in energy auditing and efficiency of industrial facilities.",
+    "academics.c3.title": "High School Diploma, Physical Sciences",
+    "academics.c3.school": "Qadi Ibn Al Arabi High School · Oujda",
+    "academics.c3.desc": "Scientific foundation in applied physics, the basis of my engineering path.",
+
+    "skills.label": "Technical expertise",
+    "skills.titleHtml": "Core <span>skills</span>",
+    "skills.sub": "Cross-functional expertise, from the field to analysis, covering the entire industrial performance chain.",
+    "skills.s1.title": "Industrial Quality",
+    "skills.s1.desc": "Proficient in quality control tools, non-conformance analysis and corrective actions, applying ISO 9001 principles.",
+    "skills.s2.title": "Continuous Improvement",
+    "skills.s2.desc": "Analysis of industrial performance, identification of improvement opportunities and application of Lean Manufacturing, Six Sigma, DMAIC and PDCA methodologies.",
+    "skills.s3.title": "Automation & Industrial Computing",
+    "skills.s3.desc": "Development of automation solutions with Siemens TIA Portal and LabVIEW, PLC programming, HMI interface design and process supervision.",
+    "skills.s4.title": "Control Systems",
+    "skills.s4.desc": "Configuration of industrial communications (OPC) and development of control loops for real-time process supervision.",
+    "skills.s5.title": "Production Management & Logistics",
+    "skills.s5.desc": "Knowledge of production management, inventory management, industrial planning and project coordination in a production environment.",
+    "skills.s6.title": "Energy Efficiency",
+    "skills.s6.desc": "Conducting energy audits, consumption analysis and proposing solutions to improve the energy efficiency of industrial facilities.",
+    "skills.s7.title": "Industrial Engineering",
+    "skills.s7.desc": "Comprehensive analysis of production systems, from process study to developing technical solutions suited to industry challenges.",
+    "skills.s8.title": "Industrial Digitalization",
+    "skills.s8.desc": "Development of supervisory web applications, database design and IoT prototypes for real-time process monitoring.",
+    "skills.softwareTitle": "Software & tools mastered",
+
+    "projects.label": "07 Projects",
+    "projects.titleHtml": "Technical <span>projects</span>",
+    "projects.sub": "Academic and personal projects covering automation, quality, industrial IoT and mechanical design.",
+
+    "projects.p1.title": "Automation and supervision of an industrial roaster",
+    "projects.p1.desc": "Development of an automation and supervision solution using Siemens TIA Portal V16, enabling automated control of the roasting process, with recipe management and regulation of key parameters.",
+    "projects.p1.li1": "Programming of a Siemens S7-1500 PLC in TIA Portal V16",
+    "projects.p1.li2": "Development of a Siemens KTP700 HMI for supervision and alarm monitoring",
+    "projects.p1.li3": "Manual and Automatic modes with production recipe management",
+    "projects.p1.li4": "Temperature regulation and stirring speed control",
+
+    "projects.p2.title": "Secure industrial recipe management system",
+    "projects.p2.desc": "Design of a secure production recipe management system using Siemens TIA Portal V16, ensuring the protection of critical parameters through authentication and access management.",
+    "projects.p2.li1": "Username and password authentication",
+    "projects.p2.li2": "Access level management based on user profiles",
+    "projects.p2.li3": "Automatic alarm generation after multiple failed login attempts",
+    "projects.p2.li4": "HMI dedicated to secure recipe administration",
+
+    "projects.p3.title": "IoT prototype for environmental parameter monitoring",
+    "projects.p3.desc": "Design of an IoT prototype for real-time temperature and humidity monitoring, with data transmission to a web application and automatic notifications when thresholds are exceeded.",
+    "projects.p3.li1": "Embedded system based on ESP8266 and a DHT11 sensor",
+    "projects.p3.li2": "Web application with Django REST API for data visualization",
+    "projects.p3.li3": "Automatic alerts via Gmail, WhatsApp and Telegram",
+    "projects.p3.li4": "PCB design with EasyEDA and enclosure modeling with Fusion 360",
+
+    "projects.p4.title": "Automation of an electrical pumping station",
+    "projects.p4.desc": "Design and automation of a pumping station compliant with the Special Technical Specifications (CPS), including electrical design, sizing and automated system control.",
+    "projects.p4.li1": "Electrical diagrams using QElectroTech",
+    "projects.p4.li2": "Cable, protection and equipment sizing via Caneco BT",
+    "projects.p4.li3": "PLC programming and development of a supervision interface",
+    "projects.p4.li4": "Technical compliance verification of the installation",
+
+    "projects.p5.title": "Quality Management System (QMS)",
+    "projects.p5.desc": "Development of a Quality Management System for a higher education institution, based on ISO 9001:2015, to structure processes and establish a continuous improvement approach.",
+    "projects.p5.li1": "Mapping of strategic, operational and support processes",
+    "projects.p5.li2": "Development of quality documentation (policy, procedures, quality manual)",
+    "projects.p5.li3": "Definition of performance indicators (KPIs) for process monitoring",
+    "projects.p5.li4": "Risk-based approach and proposed corrective actions",
+
+    "projects.p6.title": "Mechanical modeling with CATIA V5",
+    "projects.p6.desc": "Completion of computer-aided mechanical design projects: part modeling, assembly creation and production of technical drawings compliant with manufacturing requirements.",
+    "projects.p6.li1": "3D modeling of mechanical parts",
+    "projects.p6.li2": "Creation of functional assemblies",
+    "projects.p6.li3": "Development of dimensioned drawings",
+
+    "projects.p7.title": "Employee management system",
+    "projects.p7.desc": "Development of an employee management application based on a relational database, for organizing and tracking staff information.",
+    "projects.p7.li1": "Functional needs analysis",
+    "projects.p7.li2": "Database modeling using the Merise method (CDM & LDM)",
+    "projects.p7.li3": "Development of SQL queries for data management",
+
+    "stages.label": "05 Field experiences",
+    "stages.titleHtml": "Professional <span>experience</span>",
+    "stages.sub": "Five experiences across heavy industry, railway, food & beverage, and energy.",
+    "stages.pfeBadge": "Final Year Project",
+
+    "stages.e1.title": "Engineering Intern — Automation & Advanced Process Control",
+    "stages.e1.li1": "Feasibility study for integrating the Kiln Master system on the kiln line",
+    "stages.e1.li2": "Identification, qualification and validation of signals required for advanced control",
+    "stages.e1.li3": "Configuration of OPC communications between ABB AC800M and the HLC server",
+    "stages.e1.li4": "Development of a LabVIEW prototype featuring three control loops (BZT, ID Fan, flour feed)",
+    "stages.e1.li5": "Prototype validation through simulation of various operating scenarios",
+
+    "stages.e2.title": "Industrial Maintenance Intern",
+    "stages.e2.li1": "Introduction to railway systems and their maintenance organization",
+    "stages.e2.li2": "Participation in preventive and corrective maintenance operations",
+    "stages.e2.li3": "Introduction to Asset Maintenance Management (GMO)",
+    "stages.e2.li4": "Observation of diagnostic and equipment reliability methods",
+
+    "stages.e3.title": "Quality Control & Industrial Safety Intern",
+    "stages.e3.li1": "Quality checks on glass bottles and analysis of CO₂, ozone and beverages",
+    "stages.e3.li2": "Participation in HSE inspections and safety checklist follow-up",
+    "stages.e3.li3": "Application of the LOTO procedure to secure interventions",
+    "stages.e3.li4": "Verification of equipment and safety device compliance",
+
+    "stages.e4.title": "Energy Optimization Intern",
+    "stages.e4.li1": "Analysis of energy consumption in industrial facilities",
+    "stages.e4.li2": "Identification of energy performance improvement opportunities",
+    "stages.e4.li3": "Participation in process optimization actions",
+
+    "stages.e5.title": "Introductory Internship — Electrical Engineering",
+    "stages.e5.li1": "Participation in the installation and maintenance of public lighting systems",
+    "stages.e5.li2": "Introduction to electrical equipment and field interventions",
+
+    "certs.label": "Certified quality",
+    "certs.title": "Certifications",
+    "certs.cardTitle": "ISO 9001:2015 — Quality Management System (QMS Foundations)",
+    "certs.cardMeta": "Knights of Safety Academy · Obtained August 2024",
+    "certs.tag1": "ISO 9001:2015 requirements",
+    "certs.tag2": "Process approach",
+    "certs.tag3": "Quality management",
+    "certs.tag4": "Risk management",
+    "certs.tag5": "Corrective actions (CAPA)",
+    "certs.tag6": "KPI-driven monitoring",
+
+    "contact.title": "Get In Touch",
+    "contact.infoTitle": "Let's connect",
+    "contact.infoP": "Feel free to reach out through any of the following channels for professional opportunities.",
+    "contact.formTitle": "Send me a message",
+    "contact.namePh": "Your name",
+    "contact.emailPh": "Your email",
+    "contact.messagePh": "Your message",
+    "contact.submitBtn": "Send message",
+    "contact.formNote": "Thank you! This form is a static demo — feel free to email me directly at soukainahammadi09@gmail.com.",
+
+    "footer.text": "Industrial Systems Engineer"
+  }
+};
+
+
+/* ═══════════════════════════════════════════════════
+   SOUKAINA HAMMADI — PORTFOLIO
+   Script vanilla JS : navigation, animations, interactions
+═══════════════════════════════════════════════════ */
+
+document.addEventListener('DOMContentLoaded', () => {
+
+    /* ---------- Langue (FR / EN) ---------- */
+    const langSwitch = document.getElementById('langSwitch');
+    const langOpts = langSwitch.querySelectorAll('.lang-opt');
+    const htmlEl = document.documentElement;
+
+    function applyLanguage(lang) {
+        const dict = translations[lang];
+        if (!dict) return;
+
+        // Texte simple (textContent)
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (dict[key] !== undefined) el.textContent = dict[key];
+        });
+
+        // Texte avec balise imbriquée (innerHTML), ex: "À propos <span>de moi</span>"
+        document.querySelectorAll('[data-i18n-html]').forEach(el => {
+            const key = el.getAttribute('data-i18n-html');
+            if (dict[key] !== undefined) el.innerHTML = dict[key];
+        });
+
+        // Placeholders de formulaire
+        document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
+            const key = el.getAttribute('data-i18n-placeholder');
+            if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
+        });
+
+        langOpts.forEach(opt => opt.classList.toggle('active', opt.dataset.lang === lang));
+        htmlEl.setAttribute('lang', lang);
+        localStorage.setItem('portfolioLang', lang);
     }
-  });
-}, { threshold: 0.5 });
-document.querySelectorAll('.hstat-num[data-target]').forEach(el => co.observe(el));
 
-/* LIGHTBOX */
-function openLB(src){ document.getElementById('lbimg').src = src; document.getElementById('lb').style.display = 'flex'; }
-document.addEventListener('keydown', e => { if(e.key==='Escape') document.getElementById('lb').style.display='none'; });
+    langSwitch.addEventListener('click', () => {
+        const current = htmlEl.getAttribute('lang') === 'en' ? 'en' : 'fr';
+        applyLanguage(current === 'fr' ? 'en' : 'fr');
+    });
+
+    const savedLang = localStorage.getItem('portfolioLang') || 'fr';
+    applyLanguage(savedLang);
+
+    /* ---------- Navbar : ombre au scroll ---------- */
+    const nav = document.getElementById('mainNav');
+    const onScroll = () => {
+        nav.classList.toggle('scrolled', window.scrollY > 10);
+        scrollTopBtn.classList.toggle('show', window.scrollY > 500);
+    };
+
+    /* ---------- Menu mobile (hamburger) ---------- */
+    const navToggle = document.getElementById('navToggle');
+    const navLinks = document.getElementById('navLinks');
+
+    navToggle.addEventListener('click', () => {
+        const isOpen = navLinks.classList.toggle('open');
+        navToggle.classList.toggle('open', isOpen);
+        navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Ferme le menu mobile après un clic sur un lien
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('open');
+            navToggle.classList.remove('open');
+            navToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    /* ---------- Animation au scroll (reveal) ---------- */
+    const revealEls = document.querySelectorAll('.reveal, .reveal-l, .reveal-r');
+    const revealObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    revealEls.forEach(el => revealObserver.observe(el));
+
+    /* ---------- Compteurs animés (statistiques du hero) ---------- */
+    const counters = document.querySelectorAll('.hstat-num');
+    const animateCounter = (el) => {
+        const target = parseInt(el.dataset.count, 10);
+        const duration = 1600;
+        const start = performance.now();
+
+        const step = (now) => {
+            const progress = Math.min((now - start) / duration, 1);
+            const eased = 1 - Math.pow(1 - progress, 3); // easeOutCubic
+            el.textContent = Math.floor(eased * target);
+            if (progress < 1) {
+                requestAnimationFrame(step);
+            } else {
+                el.textContent = target;
+            }
+        };
+        requestAnimationFrame(step);
+    };
+
+    const counterObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCounter(entry.target);
+                counterObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.5 });
+
+    counters.forEach(c => counterObserver.observe(c));
+
+    /* ---------- Bouton retour en haut ---------- */
+    const scrollTopBtn = document.getElementById('scrollTop');
+    scrollTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    /* ---------- Formulaire de contact (pas de backend) ---------- */
+    const form = document.getElementById('contactForm');
+    const formNote = document.getElementById('formNote');
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const lang = htmlEl.getAttribute('lang') === 'en' ? 'en' : 'fr';
+        formNote.textContent = translations[lang]['contact.formNote'];
+    });
+
+    /* ---------- Lightbox pour la galerie CATIA ---------- */
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightboxImg');
+    const lightboxClose = document.getElementById('lightboxClose');
+
+    window.openLightbox = (src) => {
+        lightboxImg.src = src;
+        lightbox.classList.add('open');
+    };
+
+    const closeLightbox = () => lightbox.classList.remove('open');
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) closeLightbox();
+    });
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') closeLightbox();
+    });
+
+});
+
 </script>
-
 </body>
 </html>
